@@ -317,7 +317,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 130405097}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 988308735}
+        m_TargetAssemblyTypeName: gamemana, Assembly-CSharp
+        m_MethodName: storyTime
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &316826641
 GameObject:
   m_ObjectHideFlags: 0
@@ -878,7 +890,7 @@ MonoBehaviour:
   stories:
   - {fileID: 11400000, guid: 4f338401fd990e4498fcc55b3f6cfaae, type: 2}
   - {fileID: 11400000, guid: ab54b3a1aa94af74fb62110f654e13ec, type: 2}
-  state: 0
+  - {fileID: 11400000, guid: 32f6ca0e6bcd25247bc68699aaec5189, type: 2}
   Choose: {fileID: 1179386051}
   textBox: {fileID: 130405094}
   text: {fileID: 328507310}
@@ -888,7 +900,7 @@ MonoBehaviour:
   setting: {fileID: 1299321122}
   HistoryLine: {fileID: 1520391213}
   Map: {fileID: 1511731551}
-  source: {fileID: 0}
+  source: {fileID: 316826645}
   chapter: 0
 --- !u!4 &988308736
 Transform:
@@ -1133,6 +1145,7 @@ GameObject:
   - component: {fileID: 1497203481}
   - component: {fileID: 1497203483}
   - component: {fileID: 1497203482}
+  - component: {fileID: 1497203484}
   m_Layer: 5
   m_Name: charater
   m_TagString: Untagged
@@ -1197,6 +1210,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1497203480}
   m_CullTransparentMesh: 1
+--- !u!225 &1497203484
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1497203480}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1511731551
 GameObject:
   m_ObjectHideFlags: 0

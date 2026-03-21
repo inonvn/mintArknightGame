@@ -13,7 +13,29 @@ MonoBehaviour:
   m_Name: chap0-1
   m_EditorClassIdentifier: 
   StoryChap: 0
+  chooseE: 0
   Diabl:
+  - state: 6
+    TextStory: "\xEA"
+    NameStory: 
+    clip: {fileID: 0}
+    imgNV: {fileID: 0}
+    Background: {fileID: 0}
+    textChoose: 0
+  - state: 0
+    TextStory: "\u1EBF"
+    NameStory: 
+    clip: {fileID: 0}
+    imgNV: {fileID: 0}
+    Background: {fileID: 0}
+    textChoose: 0
+  - state: 4
+    TextStory: "sao v\u1EADy ?"
+    NameStory: mint
+    clip: {fileID: 0}
+    imgNV: {fileID: 0}
+    Background: {fileID: 0}
+    textChoose: 0
   - state: 4
     TextStory: 
     NameStory: 
@@ -21,7 +43,49 @@ MonoBehaviour:
     imgNV: {fileID: 0}
     Background: {fileID: 0}
     textChoose: 0
+  - state: 4
+    TextStory: 
+    NameStory: 
+    clip: {fileID: 0}
+    imgNV: {fileID: 0}
+    Background: {fileID: 0}
+    textChoose: 0
+  - state: 4
+    TextStory: 
+    NameStory: 
+    clip: {fileID: 0}
+    imgNV: {fileID: 0}
+    Background: {fileID: 0}
+    textChoose: 0
+  - state: 4
+    TextStory: 
+    NameStory: 
+    clip: {fileID: 0}
+    imgNV: {fileID: 0}
+    Background: {fileID: 0}
+    textChoose: 0
+  - state: 4
+    TextStory: 
+    NameStory: 
+    clip: {fileID: 0}
+    imgNV: {fileID: 0}
+    Background: {fileID: 0}
+    textChoose: 0
+  - state: 1
+    TextStory: 
+    NameStory: 
+    clip: {fileID: 0}
+    imgNV: {fileID: 0}
+    Background: {fileID: 0}
+    textChoose: 0
   - state: 3
+    TextStory: 
+    NameStory: 
+    clip: {fileID: 0}
+    imgNV: {fileID: 0}
+    Background: {fileID: 0}
+    textChoose: 0
+  - state: 0
     TextStory: 
     NameStory: 
     clip: {fileID: 0}

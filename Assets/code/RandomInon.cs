@@ -50,6 +50,13 @@ public static class RandomInon
         canvasGroup.DOFade(0, 0.5f).OnComplete(() => { canvasGroup.alpha = 0; });
 
     }
+    public static void FadeIn(this CanvasGroup canvasGroup, float alpha,float time)
+    {
+        canvasGroup.alpha = alpha;
+        canvasGroup.DOKill();
+        canvasGroup.DOFade(alpha, time).OnComplete(() => { canvasGroup.alpha = 1; });
+
+    }
     public static void FadeOut(this CanvasGroup canvasGroup)
     {
         canvasGroup.alpha = 0;

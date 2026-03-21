@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfb48ebb10237fd48ad583fe1267e1e2, type: 3}
   m_Name: chap0-2
   m_EditorClassIdentifier: 
-  StoryChap: 0
+  StoryChap: 1
+  chooseE: 0
   Diabl:
   - state: 0
     TextStory: 

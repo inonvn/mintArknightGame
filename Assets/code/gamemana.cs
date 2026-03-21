@@ -14,7 +14,7 @@ using UnityEngine.UI;
 public class gamemana : MonoBehaviour
 {
     public List<Story> stories;
-    public state state;
+ 
     public GameObject Choose;
     public GameObject textBox;
     public TextMeshProUGUI text;
@@ -28,11 +28,13 @@ public class gamemana : MonoBehaviour
     public int chapter;
     bool ittyping;
     int dong;
+    ChooseE choose;
     public void storyTime ()
     {
        if (ittyping == false)
         {
             StartCoroutine(texte());
+
         dong++;
         }    
        else
@@ -46,6 +48,10 @@ public class gamemana : MonoBehaviour
       
 
     }
+    public void logE ()
+    {
+        
+    }
     Story st;
   
     IEnumerator texte()
@@ -53,28 +59,27 @@ public class gamemana : MonoBehaviour
 
 
 
-       st  = stories.Where(o => o.StoryChap == chapter).FirstOrDefault();
+       st  = stories.Where(o => o.StoryChap == chapter && o.chooseE == choose).FirstOrDefault();
         if (dong < st.Diabl.Count())
         {
+            
 
-
-            foreach (var t in st.Diabl)
-            {
-                switch (t.state)
+           
+                text.SetText("");
+                switch (st.Diabl[dong].state)
                 {
-
                     case state.None:
                         {
                            
-                            foreach (var e in t.TextStory)
+                            foreach (var e in st.Diabl[dong].TextStory)
                             {
                                 text.text += e;
                                 yield return new WaitForSeconds(0.01f);
-                                if (ittyping == true)
-                                {
-                                    SkipLine();
-                                    break;
-                                }
+                                //if (ittyping == true)
+                                //{
+                                //    SkipLine();
+                                //    break;
+                                //}
                      
                         ittyping = false;
                             }
@@ -83,16 +88,16 @@ public class gamemana : MonoBehaviour
                         
                     case state.Sound:
                         {
-                                source.PlayOneShot(t.clip);
-                            foreach (var e in t.TextStory)
+                                source.PlayOneShot(st.Diabl[dong].clip);
+                            foreach (var e in st.Diabl[dong].TextStory)
                             {
                                 text.text += e;
                                 yield return new WaitForSeconds(0.01f);
-                                if (ittyping == true)
-                                {
-                                    SkipLine();
-                                    break;
-                                }
+                                //if (ittyping == true)
+                                //{
+                                //    SkipLine();
+                                //    break;
+                                //}
                                 
                                 ittyping = false;
                             }
@@ -100,15 +105,15 @@ public class gamemana : MonoBehaviour
                         }
                     case state.stopSound:
                         {
-                            foreach (var e in t.TextStory)
+                            foreach (var e in st.Diabl[dong].TextStory)
                             {
                                 text.text += e;
                                 yield return new WaitForSeconds(0.01f);
-                                if (ittyping == true)
-                                {
-                                    SkipLine();
-                                    break;
-                                }
+                                //if (ittyping == true)
+                                //{
+                                //    SkipLine();
+                                //    break;
+                                //}
                                 source.Stop();
                                 ittyping = false;
                             }
@@ -116,16 +121,16 @@ public class gamemana : MonoBehaviour
                         }
                     case state.changeBackGround:
                         {
-                            background.sprite = t.Background;
-                            foreach (var e in t.TextStory)
+                            background.sprite = st.Diabl[dong].Background;
+                            foreach (var e in st.Diabl[dong].TextStory)
                             {
                                 text.text += e;
                                 yield return new WaitForSeconds(0.01f);
-                                if (ittyping == true)
-                                {
-                                    SkipLine();
-                                    break;
-                                }
+                                //if (ittyping == true)
+                                //{
+                                //    SkipLine();
+                                //    break;
+                                //}
                                 source.Stop();
                                 ittyping = false;
                             }
@@ -133,17 +138,17 @@ public class gamemana : MonoBehaviour
                         }
                     case state.changeNV:
                         {
-                            Name.SetText(t.NameStory);
-                            imgNV.sprite = t.imgNV;
-                            foreach (var e in t.TextStory)
+                            Name.SetText(st.Diabl[dong].NameStory);
+                            imgNV.sprite = st.Diabl[dong].imgNV;
+                            foreach (var e in st.Diabl[dong].TextStory)
                             {
                                 text.text += e;
                                 yield return new WaitForSeconds(0.01f);
-                                if (ittyping == true)
-                                {
-                                    SkipLine();
-                                    break;
-                                }
+                                //if (ittyping == true)
+                                //{
+                                //    SkipLine();
+                                //    break;
+                                //}
                                 
                                 ittyping = false;
                             }
@@ -157,15 +162,15 @@ public class gamemana : MonoBehaviour
                     case state.onlySeeText:
                         {
                             Name.SetText("");
-                            foreach (var e in t.TextStory)
+                            foreach (var e in st.Diabl[dong].TextStory)
                             {
                                 text.text += e;
                                 yield return new WaitForSeconds(0.01f);
-                                if (ittyping == true)
-                                {
-                                    SkipLine();
-                                    break;
-                                }
+                                //if (ittyping == true)
+                                //{
+                                //    SkipLine();
+                                //    break;
+                                //}
                                 source.Stop();
                                 ittyping = false;
                             }
@@ -173,7 +178,7 @@ public class gamemana : MonoBehaviour
                         }
                 }
 
-            } 
+            
 
         }
         else
@@ -201,8 +206,13 @@ public class gamemana : MonoBehaviour
         }
 
 
+public void Start()
+    {
+        storyTime();
+    }
 
     }
+    
     [CustomEditor(typeof(Story))]
 public class StoryEditor : Editor
 {

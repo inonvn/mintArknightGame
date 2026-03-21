@@ -7,6 +7,7 @@ using UnityEngine;
 public class Story : ScriptableObject
 {
     public int StoryChap;
+    public ChooseE chooseE;
     public List<Dia> Diabl;
 }
 
@@ -24,6 +25,7 @@ public class Dia
 
 public enum ChooseE
 {
+    none,
     choose1,
     choose2,
     choose3,
