@@ -20,7 +20,14 @@ public class Dia
     public AudioClip clip;
     public Sprite imgNV;
     public Sprite Background;
-    public ChooseE textChoose;
+    public List<ChooseLim> textChoose;
+}
+
+[System.Serializable]
+public class ChooseLim
+{
+    public ChooseE choose;
+    public string textCho;
 }
 
 public enum ChooseE

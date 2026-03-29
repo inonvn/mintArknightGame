@@ -16,79 +16,181 @@ MonoBehaviour:
   chooseE: 0
   Diabl:
   - state: 6
-    TextStory: "\xEA"
+    TextStory: "Kh\xF4ng gian tr\u1EAFng x\xF3a kh\xF4ng m\u1ED9t b\xF3ng ng\u01B0\u1EDDi
+      c\xF9ng v\u1EDBi s\u1EF1 y\xEAn t\u0129nh \u0111\u1EBFn k\xEC d\u1ECB. "
     NameStory: 
     clip: {fileID: 0}
     imgNV: {fileID: 0}
     Background: {fileID: 0}
-    textChoose: 0
+    textChoose: []
   - state: 0
-    TextStory: "\u1EBF"
+    TextStory: "Kh\xF3 c\xF3 th\u1EC3 tin \u0111\u01B0\u1EE3c r\u1EB1ng n\u01A1i
+      \u0111\xE2y l\xE0 n\u01A1i ch\u1EE9a \u0111\u1EF1ng nh\u1EEFng b\xED m\u1EADt 
+      kh\u1EAFp th\u1EBF gian."
     NameStory: 
     clip: {fileID: 0}
     imgNV: {fileID: 0}
     Background: {fileID: 0}
-    textChoose: 0
-  - state: 4
-    TextStory: "sao v\u1EADy ?"
+    textChoose: []
+  - state: 0
+    TextStory: "Gi\u1EEFa kh\xF4ng gian tr\u1EAFng x\xF3a \u0111\xF3 xu\u1EA5t hi\u1EC7n
+      m\u1ED9t c\xF4 g\xE1i ng\u01B0\u1EDDi Feline(t\u1ED9c m\xE8o) \u0111ang n\u1EB1m
+      cu\u1ED9n tr\xF2n c\u01A1 th\u1EC3 nh\u1ECF nh\u1EAFn c\u1EE7a m\xECnh l\u1EA1i."
     NameStory: mint
     clip: {fileID: 0}
     imgNV: {fileID: 0}
     Background: {fileID: 0}
-    textChoose: 0
-  - state: 4
-    TextStory: 
-    NameStory: 
-    clip: {fileID: 0}
-    imgNV: {fileID: 0}
-    Background: {fileID: 0}
-    textChoose: 0
-  - state: 4
-    TextStory: 
-    NameStory: 
-    clip: {fileID: 0}
-    imgNV: {fileID: 0}
-    Background: {fileID: 0}
-    textChoose: 0
-  - state: 4
-    TextStory: 
-    NameStory: 
-    clip: {fileID: 0}
-    imgNV: {fileID: 0}
-    Background: {fileID: 0}
-    textChoose: 0
-  - state: 4
-    TextStory: 
-    NameStory: 
-    clip: {fileID: 0}
-    imgNV: {fileID: 0}
-    Background: {fileID: 0}
-    textChoose: 0
-  - state: 4
-    TextStory: 
-    NameStory: 
-    clip: {fileID: 0}
-    imgNV: {fileID: 0}
-    Background: {fileID: 0}
-    textChoose: 0
-  - state: 1
-    TextStory: 
-    NameStory: 
-    clip: {fileID: 0}
-    imgNV: {fileID: 0}
-    Background: {fileID: 0}
-    textChoose: 0
-  - state: 3
-    TextStory: 
-    NameStory: 
-    clip: {fileID: 0}
-    imgNV: {fileID: 0}
-    Background: {fileID: 0}
-    textChoose: 0
+    textChoose: []
   - state: 0
-    TextStory: 
+    TextStory: "\"L\u1EA1nh\" \u0111\xF3 l\xE0 c\u1EA3m gi\xE1c c\u1EE7a c\xF4 l\xFAc
+      n\xE0y nh\u01B0ng d\xF9 v\u1EADy c\xF4 c\u0169ng kh\xF4ng quan t\xE2m l\u1EAFm"
     NameStory: 
     clip: {fileID: 0}
     imgNV: {fileID: 0}
     Background: {fileID: 0}
-    textChoose: 0
+    textChoose: []
+  - state: 0
+    TextStory: "B\u1EDFi c\xF4 \u0111\xE3 quen c\xE1i c\u1EA3m gi\xE1c khi ng\u1EE7
+      tr\xEAn s\xE0n trong th\u01B0 vi\u1EC7n c\u1EE7a Rhodes Island gi\u1ED1ng nh\u01B0 
+      bao l\u1EA7n tr\u01B0\u1EDBc."
+    NameStory: 
+    clip: {fileID: 0}
+    imgNV: {fileID: 0}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 0
+    TextStory: "Nh\u01B0ng l\u1EA7n n\xE0y th\xEC l\u1EA1i kh\xE1c c\xF4 kh\xF4ng
+      c\xF2n ng\u1EEDi th\u1EA5y m\xF9i s\xE1ch \u0111\u1EB7c tr\u01B0ng \u1EDF trong
+      th\u01B0 vi\u1EC7n n\u1EEFa."
+    NameStory: 
+    clip: {fileID: 0}
+    imgNV: {fileID: 0}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 0
+    TextStory: "C\xF4 g\xE1i m\xE8o m\u1EDF m\u1EAFt ra, nh\u01B0ng r\u1ED3i l\u1EA1i
+      ph\u1EA3i nheo m\u1EAFt l\u1EA1i v\xEC ch\u01B0a quen v\u1EDBi \xE1nh s\xE1ng."
+    NameStory: 
+    clip: {fileID: 0}
+    imgNV: {fileID: 0}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 0
+    TextStory: "D\xF9 v\u1EADy nh\u01B0ng c\xF4 v\u1EABn c\u1ED1 ng\u1ED3i d\u1EADy
+      v\xE0 nh\xECn xung quanh."
+    NameStory: "d\xF9 v\u1EADy nh\u01B0ng c\xF4 v\u1EABn c\u1ED1 ng\u1ED3i d\u1EADy
+      v\xE0 nh\xECn xung quanh"
+    clip: {fileID: 0}
+    imgNV: {fileID: 0}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 0
+    TextStory: "T\u1EA7m nh\xECn m\u1EDD \u1EA3o v\xEC m\u1EAFt ch\u01B0a th\xEDch
+      nghi \u0111\u01B0\u1EE3c v\u1EDBi \xE1nh s\xE1ng nh\u01B0ng c\xF4 v\u1EABn
+      c\xF3 th\u1EC3 hi\u1EC3u \u0111\u01B0\u1EE3c m\u1ED9t \u0111i\u1EC1u."
+    NameStory: 
+    clip: {fileID: 0}
+    imgNV: {fileID: 0}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 4
+    TextStory: "\u0110\xE2y l\xE0 \u0111\xE2u ?"
+    NameStory: Mint
+    clip: {fileID: 0}
+    imgNV: {fileID: 21300000, guid: 62b83d5aa36e6574da31e65802ea68ce, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 0
+    TextStory: "M\xECnh l\xE0m g\xEC \u1EDF \u0111\xE2y v\u1EADy ?"
+    NameStory: 
+    clip: {fileID: 0}
+    imgNV: {fileID: 0}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 0
+    TextStory: "M\u1ECDi th\u1EE9 xung quanh tr\u1EAFng qu\xE1 c\u1EE9 nh\u01B0 m\u1ED9t
+      ph\xF2ng nghi\xEAn c\u1EE9u v\u1EADy."
+    NameStory: 
+    clip: {fileID: 0}
+    imgNV: {fileID: 0}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 0
+    TextStory: " Kh\xF4ng, n\xF3 c\xF2n h\u01A1n c\u1EA3 ph\xF2ng nghi\xEAn c\u1EE9u
+      \u1EDF rhodes island hay th\u1EADm ch\xED l\xE0 c\u1EA3 \u1EDF Victoria."
+    NameStory: 
+    clip: {fileID: 0}
+    imgNV: {fileID: 0}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 0
+    TextStory: "C\u1EA3 m\u1EB7t s\xE0n n\u1EEFa n\xF3 c\u1EE9 nh\u01B0 v\xF4 h\xECnh
+      v\u1EADy kh\xF4ng bi\u1EBFt n\xF3 \u0111\u01B0\u1EE3c l\xE0m t\u1EEB v\u1EADt
+      li\u1EC7u n\xE0o nh\u1EC9 ?"
+    NameStory: 
+    clip: {fileID: 0}
+    imgNV: {fileID: 0}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 0
+    TextStory: "N\u1EBFu c\xF3 th\u1EBF l\u1EA5y m\u1ED9t ch\xFAt mang v\u1EC1 nghi\xEAn
+      c\u1EE9u th\xEC bi\u1EBFt \u0111\xE2u ?"
+    NameStory: 
+    clip: {fileID: 0}
+    imgNV: {fileID: 0}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 4
+    TextStory: "Th\xF4i ch\u1EBFt, c\xE1i th\xF3i quen c\u0169 c\u1EE7a m\xECnh l\u1EA1i
+      t\xE1i ph\xE1t r\u1ED3i."
+    NameStory: Mint
+    clip: {fileID: 0}
+    imgNV: {fileID: 21300000, guid: 10a74c0559447b24db0f1dc6c82e7a01, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 0
+    TextStory: "Skyfire lu\xF4n b\u1EA3o m\xECnh s\u1EEDa c\xE1i t\xEDnh xao nh\xE3ng
+      khi \u0111i l\xE0m nhi\u1EC7m v\u1EE5 nh\u01B0ng vi\u1EC7c d\u1EEBng ch\xFA
+      t\xE2m v\u1EDBi nh\u1EEFng th\u1EE9 m\u1EDBi l\u1EA1 th\xEC th\u1EADt kh\xF3."
+    NameStory: Mint
+    clip: {fileID: 0}
+    imgNV: {fileID: 21300000, guid: 10a74c0559447b24db0f1dc6c82e7a01, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 0
+    TextStory: "M\xE0 nh\xECn quanh ch\u1ED7 n\xE0y kh\xF4ng gi\u1ED1ng rhodes island
+      m\u1EB7c d\xF9 kh\xF4ng th\u1EC3 ph\u1EE7 \u0111\u1ECBnh rhodes island l\xE0
+      m\u1ED9t con t\xE0u l\u1EDBn nh\u01B0ng v\u1EDBi c\xE1i di\u1EC7n t\xEDch n\xE0y
+      th\xEC-"
+    NameStory: Mint
+    clip: {fileID: 0}
+    imgNV: {fileID: 21300000, guid: 10a74c0559447b24db0f1dc6c82e7a01, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 4
+    TextStory: "Nh\u1EDB l\u1EA1i th\xEC h\xF4m qua m\xECnh l\xE0m g\xEC v\u1EADy
+      nh\u1EC9 ?"
+    NameStory: Mint
+    clip: {fileID: 0}
+    imgNV: {fileID: 21300000, guid: cedebc57ee3d336419214ac68c070a54, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 0
+    TextStory: "\u0110\u1EA7u m\xECnh c\u1EE9 ong ong m\xE3i, ch\u1EAFc m\xECnh n\xEAn
+      s\u1EEDa th\xEAm c\xE1i t\xEDnh ng\u1EE7 \u1EDF d\u01B0\u1EDBi s\xE0n nh\xE0
+      c\u1EE9ng v\u1EADy."
+    NameStory: Mint
+    clip: {fileID: 0}
+    imgNV: {fileID: 21300000, guid: cedebc57ee3d336419214ac68c070a54, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 5
+    TextStory: "Tr\u01B0\u1EDBc h\u1EBFt, m\xECnh ph\u1EA3i nghi\xEAn c\u1EE9u n\u01A1i
+      n\xE0y c\xE1i \u0111\xE3.."
+    NameStory: Mint
+    clip: {fileID: 0}
+    imgNV: {fileID: 21300000, guid: 62b83d5aa36e6574da31e65802ea68ce, type: 3}
+    Background: {fileID: 0}
+    textChoose:
+    - choose: 1
+      textCho: "Kh\xE1m ph\xE1 xung quanh"

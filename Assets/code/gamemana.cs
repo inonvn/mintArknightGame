@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.WebSockets;
 using System.Xml.Linq;
 using TMPro;
 using Unity.VisualScripting;
@@ -13,6 +14,7 @@ using UnityEngine.UI;
 
 public class gamemana : MonoBehaviour
 {
+    public static gamemana gamemna;
     public List<Story> stories;
  
     public GameObject Choose;
@@ -21,14 +23,26 @@ public class gamemana : MonoBehaviour
     public TextMeshProUGUI Name;
     public Image imgNV;
     public Image background;
-    public GameObject setting;
-    public GameObject HistoryLine;
-    public GameObject Map;
     public AudioSource source;
     public int chapter;
+    public CanvasGroup UIsetting;
+
+    public GameObject settingButton;
+    public Slider Music;
+    public CanvasGroup UILog;
+    public GameObject HistoryLine;
+    public GameObject LogButton;
+    public GameObject MapButton;
+    public GameObject Map;
+    public ChooseO choo;
+    public GameObject UIchoose;
     bool ittyping;
     int dong;
-    ChooseE choose;
+  public   ChooseE choose;
+    public void Awake()
+    {
+        gamemna = this;
+    }
     public void storyTime ()
     {
        if (ittyping == false)
@@ -42,6 +56,56 @@ public class gamemana : MonoBehaviour
             SkipLine();
         }
     }
+    public void onSetting ()
+    {
+        UIsetting.gameObject.SetActive(true);
+        RandomInon.FadeOut(UIsetting);
+        LogButton.SetActive(false);
+        MapButton.SetActive(false);
+      
+
+    }    
+    public void offSsetting ()
+    {
+       
+        RandomInon.FadeIn(UIsetting);
+      
+        LogButton.SetActive(true);
+        MapButton.SetActive(true);
+    }
+    int nu = 0;
+    public void onLogE()
+    {
+        UILog.gameObject.SetActive(true);
+        RandomInon.FadeOut(UILog);
+        MapButton.SetActive(false);
+        settingButton.SetActive(false);
+        while (nu < dong)
+        
+        {
+          var e =  Instantiate(HistoryLine, UILog.transform);
+            var f1 = e.transform.Find("name").GetComponent<TextMeshProUGUI>();
+            var f2 = e.transform.Find("Dia").GetComponent<TextMeshProUGUI>();
+            if (st.Diabl[nu].state == state.changeNV)
+            {
+                f1.SetText(st.Diabl[nu].NameStory);
+            }
+            else { f1.SetText(""); }
+                f2.SetText(st.Diabl[nu].TextStory);
+            nu++;
+        }    
+
+    }
+   
+    public void offLogE()
+    {
+        RandomInon.FadeIn(UILog);
+        UILog.gameObject.SetActive(false);
+        MapButton.SetActive(true);
+        settingButton.SetActive(true);
+
+    }
+    
     public void SkipStory()
     {
         
@@ -156,8 +220,24 @@ public class gamemana : MonoBehaviour
                         }
                     case state.choose:
                         {
-
-                            break;
+                        foreach (var e in st.Diabl[dong].TextStory)
+                        {
+                            text.text += e;
+                            yield return new WaitForSeconds(0.01f);
+                            //if (ittyping == true)
+                            //{
+                            //    SkipLine();
+                            //    break;
+                            //}
+                            source.Stop();
+                            ittyping = false;
+                        }
+                        foreach (var f in st.Diabl[dong].textChoose)
+                        {
+                            var e1 = Instantiate(choo, UIchoose.transform);
+                            e1.cho(f.choose, f.textCho);
+                        }
+                        break;
                         }
                     case state.onlySeeText:
                         {
@@ -204,14 +284,17 @@ public class gamemana : MonoBehaviour
         StopAllCoroutines();
        
         }
-
-
+   
 public void Start()
     {
         storyTime();
     }
-
+    public void Update()
+    {
+        source.volume = Music.value;
     }
+
+}
     
     [CustomEditor(typeof(Story))]
 public class StoryEditor : Editor
@@ -260,7 +343,11 @@ public class StoryEditor : Editor
                 case state.choose:
                     {
                         e.TextStory = EditorGUILayout.TextField("Text :", e.TextStory);
-                        e.textChoose =(ChooseE) EditorGUILayout.EnumPopup(e.textChoose);
+                        foreach(var f in e.textChoose)
+                        {
+                            f.choose = (ChooseE)EditorGUILayout.EnumPopup(f.choose);
+                            f.textCho = EditorGUILayout.TextField("Text :", f.textCho);
+                        }    
                         break;
                     }
                 case state.onlySeeText:

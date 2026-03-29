@@ -47,14 +47,15 @@ public static class RandomInon
     {
         canvasGroup.alpha = 1;
         canvasGroup.DOKill();
-        canvasGroup.DOFade(0, 0.5f).OnComplete(() => { canvasGroup.alpha = 0; });
+       
+        canvasGroup.DOFade(0, 0.5f).OnComplete(() => { canvasGroup.alpha = 0; canvasGroup.gameObject.SetActive(false);  });
 
     }
     public static void FadeIn(this CanvasGroup canvasGroup, float alpha,float time)
     {
         canvasGroup.alpha = alpha;
         canvasGroup.DOKill();
-        canvasGroup.DOFade(alpha, time).OnComplete(() => { canvasGroup.alpha = 1; });
+        canvasGroup.DOFade(alpha, time).OnComplete(() => { canvasGroup.alpha = 0; canvasGroup.gameObject.SetActive(false); });
 
     }
     public static void FadeOut(this CanvasGroup canvasGroup)
