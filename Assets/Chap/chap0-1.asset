@@ -16,8 +16,8 @@ MonoBehaviour:
   chooseE: 0
   Diabl:
   - state: 6
-    TextStory: "Kh\xF4ng gian tr\u1EAFng x\xF3a kh\xF4ng m\u1ED9t b\xF3ng ng\u01B0\u1EDDi
-      c\xF9ng v\u1EDBi s\u1EF1 y\xEAn t\u0129nh \u0111\u1EBFn k\xEC d\u1ECB. "
+    TextStory: "kh\xF4ng gian tr\u1EAFng x\xF3a kh\xF4ng m\u1ED9t b\xF3ng ng\u01B0\u1EDDi
+      c\xF9ng v\u1EDBi s\u1EF1 t\u0129nh l\u1EB7ng \u0111\u1EBFn k\xEC d\u1ECB"
     NameStory: 
     clip: {fileID: 0}
     imgNV: {fileID: 0}
@@ -43,16 +43,15 @@ MonoBehaviour:
     textChoose: []
   - state: 0
     TextStory: "\"L\u1EA1nh\" \u0111\xF3 l\xE0 c\u1EA3m gi\xE1c c\u1EE7a c\xF4 l\xFAc
-      n\xE0y nh\u01B0ng d\xF9 v\u1EADy c\xF4 c\u0169ng kh\xF4ng quan t\xE2m l\u1EAFm"
+      n\xE0y. D\xF9 v\u1EADy c\xF4 c\u0169ng kh\xF4ng m\u1EA5y b\u1EADn t\xE2m"
     NameStory: 
     clip: {fileID: 0}
     imgNV: {fileID: 0}
     Background: {fileID: 0}
     textChoose: []
   - state: 0
-    TextStory: "B\u1EDFi c\xF4 \u0111\xE3 quen c\xE1i c\u1EA3m gi\xE1c khi ng\u1EE7
-      tr\xEAn s\xE0n trong th\u01B0 vi\u1EC7n c\u1EE7a Rhodes Island gi\u1ED1ng nh\u01B0 
-      bao l\u1EA7n tr\u01B0\u1EDBc."
+    TextStory: "B\u1EDFi c\xF4 \u0111\xE3 qu\xE1 quen c\xE1i c\u1EA3m gi\xE1c khi
+      ng\u1EE7 tr\xEAn s\xE0n th\u01B0 vi\u1EC7n c\u1EE7a rhodes island."
     NameStory: 
     clip: {fileID: 0}
     imgNV: {fileID: 0}
@@ -68,16 +67,16 @@ MonoBehaviour:
     Background: {fileID: 0}
     textChoose: []
   - state: 0
-    TextStory: "C\xF4 g\xE1i m\xE8o m\u1EDF m\u1EAFt ra, nh\u01B0ng r\u1ED3i l\u1EA1i
-      ph\u1EA3i nheo m\u1EAFt l\u1EA1i v\xEC ch\u01B0a quen v\u1EDBi \xE1nh s\xE1ng."
+    TextStory: "C\xF4 g\xE1i m\xE8o m\u1EDF m\u1EAFt ra, r\u1ED3i l\u1EA1i ph\u1EA3i
+      nheo m\u1EAFt l\u1EA1i v\xEC ch\u01B0a quen v\u1EDBi \xE1nh s\xE1ng."
     NameStory: 
     clip: {fileID: 0}
     imgNV: {fileID: 0}
     Background: {fileID: 0}
     textChoose: []
   - state: 0
-    TextStory: "D\xF9 v\u1EADy nh\u01B0ng c\xF4 v\u1EABn c\u1ED1 ng\u1ED3i d\u1EADy
-      v\xE0 nh\xECn xung quanh."
+    TextStory: "Tuy v\u1EADy c\xF4 v\u1EABn c\u1ED1 ng\u1ED3i d\u1EADy v\xE0 nh\xECn
+      xung quanh."
     NameStory: "d\xF9 v\u1EADy nh\u01B0ng c\xF4 v\u1EABn c\u1ED1 ng\u1ED3i d\u1EADy
       v\xE0 nh\xECn xung quanh"
     clip: {fileID: 0}
@@ -132,12 +131,32 @@ MonoBehaviour:
     imgNV: {fileID: 0}
     Background: {fileID: 0}
     textChoose: []
-  - state: 0
+  - state: 6
+    TextStory: "C\xF4 g\xE1i m\xE8o g\xF5 nh\u1EB9 xu\u1ED1ng \u0111\u1EC3 ki\u1EC3m
+      tra ch\u1EA5t li\u1EC7u k\xEC l\u1EA1 c\u1EE7a m\u1EB7t s\xE0n."
+    NameStory: Mint
+    clip: {fileID: 0}
+    imgNV: {fileID: 21300000, guid: 62b83d5aa36e6574da31e65802ea68ce, type: 3}
+    Background: {fileID: 0}
+    textChoose:
+    - choose: 1
+      textCho: "Kh\xE1m ph\xE1 xung quanh"
+  - state: 6
+    TextStory: "C\xF3 v\u1EBB n\xF3 kh\xF4ng gi\u1ED1ng v\u1EDBi k\xEDnh hay b\u1EA5t
+      k\xEC th\u1EE9 g\xEC c\xF4 bi\u1EBFt."
+    NameStory: Mint
+    clip: {fileID: 0}
+    imgNV: {fileID: 21300000, guid: 62b83d5aa36e6574da31e65802ea68ce, type: 3}
+    Background: {fileID: 0}
+    textChoose:
+    - choose: 1
+      textCho: "Kh\xE1m ph\xE1 xung quanh"
+  - state: 4
     TextStory: "N\u1EBFu c\xF3 th\u1EBF l\u1EA5y m\u1ED9t ch\xFAt mang v\u1EC1 nghi\xEAn
       c\u1EE9u th\xEC bi\u1EBFt \u0111\xE2u ?"
-    NameStory: 
+    NameStory: Mint
     clip: {fileID: 0}
-    imgNV: {fileID: 0}
+    imgNV: {fileID: 21300000, guid: 62b83d5aa36e6574da31e65802ea68ce, type: 3}
     Background: {fileID: 0}
     textChoose: []
   - state: 4
@@ -151,22 +170,30 @@ MonoBehaviour:
   - state: 0
     TextStory: "Skyfire lu\xF4n b\u1EA3o m\xECnh s\u1EEDa c\xE1i t\xEDnh xao nh\xE3ng
       khi \u0111i l\xE0m nhi\u1EC7m v\u1EE5 nh\u01B0ng vi\u1EC7c d\u1EEBng ch\xFA
-      t\xE2m v\u1EDBi nh\u1EEFng th\u1EE9 m\u1EDBi l\u1EA1 th\xEC th\u1EADt kh\xF3."
+      t\xE2m v\u1EDBi nh\u1EEFng th\u1EE9 m\u1EDBi l\u1EA1 th\xEC th\u1EADt kh\xF3"
     NameStory: Mint
     clip: {fileID: 0}
     imgNV: {fileID: 21300000, guid: 10a74c0559447b24db0f1dc6c82e7a01, type: 3}
     Background: {fileID: 0}
     textChoose: []
   - state: 0
-    TextStory: "M\xE0 nh\xECn quanh ch\u1ED7 n\xE0y kh\xF4ng gi\u1ED1ng rhodes island
-      m\u1EB7c d\xF9 kh\xF4ng th\u1EC3 ph\u1EE7 \u0111\u1ECBnh rhodes island l\xE0
-      m\u1ED9t con t\xE0u l\u1EDBn nh\u01B0ng v\u1EDBi c\xE1i di\u1EC7n t\xEDch n\xE0y
-      th\xEC-"
+    TextStory: "M\xE0 nh\xECn quanh ch\u1ED7 n\xE0y kh\xF4ng gi\u1ED1ng rhodes island."
     NameStory: Mint
     clip: {fileID: 0}
     imgNV: {fileID: 21300000, guid: 10a74c0559447b24db0f1dc6c82e7a01, type: 3}
     Background: {fileID: 0}
     textChoose: []
+  - state: 0
+    TextStory: "M\u1EB7c d\xF9 kh\xF4ng th\u1EC3 ph\u1EE7 \u0111\u1ECBnh rhodes island
+      l\xE0 m\u1ED9t con t\xE0u l\u1EDBn, v\u1EDBi c\xE1i di\u1EC7n t\xEDch n\xE0y
+      th\xEC-"
+    NameStory: Mint
+    clip: {fileID: 0}
+    imgNV: {fileID: 21300000, guid: 62b83d5aa36e6574da31e65802ea68ce, type: 3}
+    Background: {fileID: 0}
+    textChoose:
+    - choose: 1
+      textCho: "Kh\xE1m ph\xE1 xung quanh"
   - state: 4
     TextStory: "Nh\u1EDB l\u1EA1i th\xEC h\xF4m qua m\xECnh l\xE0m g\xEC v\u1EADy
       nh\u1EC9 ?"
@@ -176,21 +203,21 @@ MonoBehaviour:
     Background: {fileID: 0}
     textChoose: []
   - state: 0
-    TextStory: "\u0110\u1EA7u m\xECnh c\u1EE9 ong ong m\xE3i, ch\u1EAFc m\xECnh n\xEAn
-      s\u1EEDa th\xEAm c\xE1i t\xEDnh ng\u1EE7 \u1EDF d\u01B0\u1EDBi s\xE0n nh\xE0
-      c\u1EE9ng v\u1EADy."
+    TextStory: "\u0110\u1EA7u m\xECnh c\u1EE9 ong ong m\xE3i, c\xF3 l\u1EBD m\xECnh
+      n\xEAn s\u1EEDa th\xEAm c\xE1i t\xEDnh ng\u1EE7 \u1EDF d\u01B0\u1EDBi s\xE0n
+      nh\xE0 c\u1EE9ng v\u1EADy."
     NameStory: Mint
     clip: {fileID: 0}
     imgNV: {fileID: 21300000, guid: cedebc57ee3d336419214ac68c070a54, type: 3}
     Background: {fileID: 0}
     textChoose: []
   - state: 5
-    TextStory: "Tr\u01B0\u1EDBc h\u1EBFt, m\xECnh ph\u1EA3i nghi\xEAn c\u1EE9u n\u01A1i
-      n\xE0y c\xE1i \u0111\xE3.."
+    TextStory: "tr\u01B0\u1EDBc h\u1EBFt, m\xECnh ph\u1EA3i t\xECm \u0111\u01B0\u1EDDng
+      v\u1EC1 c\xE1i \u0111\xE3."
     NameStory: Mint
     clip: {fileID: 0}
     imgNV: {fileID: 21300000, guid: 62b83d5aa36e6574da31e65802ea68ce, type: 3}
     Background: {fileID: 0}
     textChoose:
-    - choose: 1
+    - choose: 0
       textCho: "Kh\xE1m ph\xE1 xung quanh"

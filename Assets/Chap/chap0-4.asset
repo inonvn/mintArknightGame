@@ -1,0 +1,164 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfb48ebb10237fd48ad583fe1267e1e2, type: 3}
+  m_Name: chap0-4
+  m_EditorClassIdentifier: 
+  StoryChap: 4
+  chooseE: 0
+  Diabl:
+  - state: 6
+    TextStory: "M\u1ED9t b\xECnh n\u01B0\u1EDBc l\xE0m t\u1EEB s\u1EE9 \u0111\u1EB7t
+      c\u1EA1nh \u0111\xF3 thu h\xFAt s\u1EF1 ch\xFA \xFD c\u1EE7a c\xF4"
+    NameStory: 
+    clip: {fileID: 0}
+    imgNV: {fileID: 0}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 0
+    TextStory: "Ngay l\u1EADp t\u1EE9c c\xF4 v\u1ED3 l\u1EA5y r\u1ED3i m\u1EDF mi\u1EC7ng
+      r\xF3t l\u01B0\u1EE3ng l\u1EDBn n\u01B0\u1EDBc b\xEAn trong \u0111\xF3 v\xE0o
+      m\u1EB7c cho vi\u1EC7c n\u01B0\u1EDBc ch\u1EA3y ra th\u1EA5m v\xE0o v\xE1y
+      v\xE0 \xE1o kho\xE1c c\u1EE7a c\xF4."
+    NameStory: 
+    clip: {fileID: 0}
+    imgNV: {fileID: 0}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 4
+    TextStory: "Kh\u1EE5-"
+    NameStory: Mint
+    clip: {fileID: 0}
+    imgNV: {fileID: 21300000, guid: d4ca2eb323dfc0541987d95a2e3d9133, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 1
+    TextStory: 
+    NameStory: 
+    clip: {fileID: 8300000, guid: de441df6445ca554ba3ed38af0bd60a5, type: 3}
+    imgNV: {fileID: 0}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 6
+    TextStory: "C\xF4 ho s\u1EB7c s\u1EE5a ngay sau khi u\u1ED1ng \u0111\u01B0\u1EE3c
+      m\u1ED9t ch\xFAt n\u01B0\u1EDBc c\xF2n chi\u1EBFc b\xECnh th\xEC r\u01A1i xu\u1ED1ng
+      \u0111\u1EA5t v\u1EE1 tan th\xE0nh nh\u1EEFng m\u1EA3nh s\u1EE9 s\u1EAFc l\u1EA1nh"
+    NameStory: 
+    clip: {fileID: 8300000, guid: de441df6445ca554ba3ed38af0bd60a5, type: 3}
+    imgNV: {fileID: 0}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 0
+    TextStory: "N\u01B0\u1EDBc m\u1EAFt c\xF4 tr\xE0o ra v\xEC c\u1EA3m gi\xE1c s\u1EB7c
+      n\u01B0\u1EDBc, \xE1o v\xE0 v\xE1y c\xF4 c\u0169ng b\u1ECB \u01B0\u1EDBt m\u1ED9t
+      ph\u1EA7n."
+    NameStory: 
+    clip: {fileID: 8300000, guid: de441df6445ca554ba3ed38af0bd60a5, type: 3}
+    imgNV: {fileID: 0}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 0
+    TextStory: "C\xF4 bi\u1EBFt b\u1EA3n th\xE2n n\xEAn r\xF3t n\u01B0\u1EDBc ra
+      c\u1ED1c \u0111\u1EC3 tr\xE1nh \u01B0\u1EDBt hay \xEDt ra c\u0169ng ph\u1EA3i
+      u\u1ED1ng t\u1EEB t\u1ED1n."
+    NameStory: 
+    clip: {fileID: 8300000, guid: de441df6445ca554ba3ed38af0bd60a5, type: 3}
+    imgNV: {fileID: 0}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 0
+    TextStory: "C\xF4 bi\u1EBFt b\u1EA3n th\xE2n kh\xF4ng n\xEAn u\u1ED1ng nh\u1EEFng
+      th\u1EE9 kh\xF4ng ch\u1EAFc ch\u1EAFn."
+    NameStory: 
+    clip: {fileID: 8300000, guid: de441df6445ca554ba3ed38af0bd60a5, type: 3}
+    imgNV: {fileID: 0}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 0
+    TextStory: "C\xF4 bi\u1EBFt b\u1EA3n th\xE2n c\xF4 c\u1EF1c k\xEC t\u1EC7 l\xFAc
+      n\xE0y."
+    NameStory: 
+    clip: {fileID: 8300000, guid: de441df6445ca554ba3ed38af0bd60a5, type: 3}
+    imgNV: {fileID: 0}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 0
+    TextStory: "C\xF4 bi\u1EBFt h\u1EBFt m\u1ECDi th\u1EE9 c\u0169ng nh\u01B0 l\xFD
+      thuy\u1EBFt nh\u01B0ng ph\u1EA7n b\u1EA3n n\u0103ng c\u1EE7a c\xF4 khi\u1EBFn
+      c\xF4 x\u1EED l\xED m\u1ECDi th\u1EE9 m\u1ED9t c\xE1ch sai l\u1EA7m."
+    NameStory: 
+    clip: {fileID: 8300000, guid: de441df6445ca554ba3ed38af0bd60a5, type: 3}
+    imgNV: {fileID: 0}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 0
+    TextStory: "C\xF4 c\u1ED1 b\xECnh t\u0129nh l\u1EA1i r\u1ED3i nh\xECn xung quanh
+      c\u0103n ph\xF2ng c\xF4 \u0111ang \u1EDF."
+    NameStory: 
+    clip: {fileID: 8300000, guid: de441df6445ca554ba3ed38af0bd60a5, type: 3}
+    imgNV: {fileID: 0}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 0
+    TextStory: "C\xF4 c\u1ED1 b\xECnh t\u0129nh l\u1EA1i r\u1ED3i nh\xECn xung quanh
+      c\u0103n ph\xF2ng c\xF4 \u0111ang \u1EDF."
+    NameStory: 
+    clip: {fileID: 8300000, guid: de441df6445ca554ba3ed38af0bd60a5, type: 3}
+    imgNV: {fileID: 0}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 4
+    TextStory: "\u0110\xE2y l\xE0 \u0111\xE2u ?"
+    NameStory: Mint
+    clip: {fileID: 8300000, guid: de441df6445ca554ba3ed38af0bd60a5, type: 3}
+    imgNV: {fileID: 21300000, guid: 62b83d5aa36e6574da31e65802ea68ce, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 0
+    TextStory: "C\u0103n ph\xF2ng n\xE0y l\xE0-"
+    NameStory: Mint
+    clip: {fileID: 8300000, guid: de441df6445ca554ba3ed38af0bd60a5, type: 3}
+    imgNV: {fileID: 21300000, guid: 62b83d5aa36e6574da31e65802ea68ce, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 0
+    TextStory: "\u0110\xE2y l\xE0 ph\xF2ng c\u1EE7a m\xECnh \u1EDF rhodes island."
+    NameStory: Mint
+    clip: {fileID: 8300000, guid: de441df6445ca554ba3ed38af0bd60a5, type: 3}
+    imgNV: {fileID: 21300000, guid: 62b83d5aa36e6574da31e65802ea68ce, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 0
+    TextStory: "M\xECnh tr\u1EDF l\u1EA1i r\u1ED3i sao ?"
+    NameStory: Mint
+    clip: {fileID: 8300000, guid: de441df6445ca554ba3ed38af0bd60a5, type: 3}
+    imgNV: {fileID: 21300000, guid: 62b83d5aa36e6574da31e65802ea68ce, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 1
+    TextStory: "may qu\xE1, c\u1EE9 t\u01B0\u1EDFng m\xECnh s\u1EBD kh\xF4ng th\u1EC3
+      tr\u1EDF v\u1EC1 \u0111\u01B0\u1EE3c n\u1EEFa"
+    NameStory: Mint
+    clip: {fileID: 8300000, guid: 512f183c7ee1f2f4989ef85ced5e888b, type: 3}
+    imgNV: {fileID: 21300000, guid: 62b83d5aa36e6574da31e65802ea68ce, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 5
+    TextStory: 
+    NameStory: Mint
+    clip: {fileID: 8300000, guid: 512f183c7ee1f2f4989ef85ced5e888b, type: 3}
+    imgNV: {fileID: 21300000, guid: 62b83d5aa36e6574da31e65802ea68ce, type: 3}
+    Background: {fileID: 0}
+    textChoose:
+    - choose: 1
+      textCho: "D\u1ECDn m\u1EA3nh s\u1EE9"
+    - choose: 2
+      textCho: "R\u1EEDa m\u1EB7t"

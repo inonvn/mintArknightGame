@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using DG.Tweening;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -8,6 +9,7 @@ using UnityEngine.UI;
 
 public static class RandomInon
 {
+   
     public static System.Random random = new System.Random();
     public static void Shuffle<T>(this IList<T> list)
     {
@@ -62,7 +64,7 @@ public static class RandomInon
     {
         canvasGroup.alpha = 0;
         canvasGroup.DOKill();
-        canvasGroup.DOFade(1, 0.5f).OnComplete(() => { canvasGroup.alpha = 1; });
+        canvasGroup.DOFade(1, 0.5f).OnComplete(() => { canvasGroup.alpha = 1; canvasGroup.gameObject.SetActive(true); });
 
     }
     public static void ButtonSound (this AudioSource audioSource, AudioClip audioClip )

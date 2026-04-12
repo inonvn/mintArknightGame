@@ -1,0 +1,358 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfb48ebb10237fd48ad583fe1267e1e2, type: 3}
+  m_Name: chap0-6-2
+  m_EditorClassIdentifier: 
+  StoryChap: 8
+  chooseE: 2
+  Diabl:
+  - state: 1
+    TextStory: 
+    NameStory: 
+    clip: {fileID: 8300000, guid: 789dba4b80ae7924785c3d8f11051a2e, type: 3}
+    imgNV: {fileID: 0}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 1
+    TextStory: 
+    NameStory: 
+    clip: {fileID: 8300000, guid: e563141ee151865408660f12eed3eea1, type: 3}
+    imgNV: {fileID: 0}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 4
+    TextStory: "K\u1EC3 ra l\u1EA7n \u0111\u1EA7u m\xECnh \u0111\u1EBFn \u0111\xE2y,
+      m\xECnh c\u0169ng b\u1EA5t ng\u1EDD v\u1EC1 s\u1EF1 hi\u1EC7n \u0111\u1EA1i
+      c\u1EE7a c\u01A1 s\u1EDF y t\u1EBF n\u01A1i \u0111\xE2y."
+    NameStory: Mint
+    clip: {fileID: 8300000, guid: e563141ee151865408660f12eed3eea1, type: 3}
+    imgNV: {fileID: 21300000, guid: 4af088514ffa4aa4ab20338e46c13228, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 0
+    TextStory: "D\xF9 n\u01A1i n\xE0y \u0111\u01B0\u1EE3c l\u1EADp ra \u0111\u1EC3
+      ch\u1EEFa tr\u1ECB cho ng\u01B0\u1EDDi nhi\u1EC5m b\u1EC7nh."
+    NameStory: Mint
+    clip: {fileID: 8300000, guid: e563141ee151865408660f12eed3eea1, type: 3}
+    imgNV: {fileID: 21300000, guid: cedebc57ee3d336419214ac68c070a54, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 0
+    TextStory: "N\u1EBFu ph\u1EA3i so v\u1EDBi nh\u1EEFng ph\xF2ng kh\xE1m kh\xE1c
+      th\xEC ch\u1EA5t l\u01B0\u1EE3ng y t\u1EBF \u1EDF n\u01A1i n\xE0y t\u01B0\u01A1ng
+      \u0111\u01B0\u01A1ng v\u1EDBi c\xE1c c\u01A1 s\u1EDF y t\u1EBF d\xE0nh cho
+      gi\u1EDBi qu\xFD t\u1ED9c \u1EDF Victoria."
+    NameStory: Mint
+    clip: {fileID: 8300000, guid: e563141ee151865408660f12eed3eea1, type: 3}
+    imgNV: {fileID: 21300000, guid: cedebc57ee3d336419214ac68c070a54, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 4
+    TextStory: "M\u1ECDi ng\u01B0\u1EDDi \u1EDF \u0111\xE2y \u0111\u1EC1u kh\xF4ng
+      c\xF3 \xE1c c\u1EA3m v\u1EDBi ng\u01B0\u1EDDi b\u1ECB nhi\u1EC5m b\u1EC7nh
+      \u0111i\u1EC1u \u0111\xF3 khi\u1EBFn m\xECnh c\u1EA3m th\u1EA5y may m\u1EAFn."
+    NameStory: Mint
+    clip: {fileID: 8300000, guid: e563141ee151865408660f12eed3eea1, type: 3}
+    imgNV: {fileID: 21300000, guid: cedebc57ee3d336419214ac68c070a54, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 4
+    TextStory: "Ngay sau khi b\u1ECB nhi\u1EC5m b\u1EC7nh m\xECnh c\u1EE9 ngh\u0129
+      r\u1EB1ng s\u1EBD kh\xF4ng n\u01A1i n\xE0o ch\u1ECBu nh\u1EADn m\xECnh n\u1EEFa."
+    NameStory: Mint
+    clip: {fileID: 8300000, guid: 52fbb8d8c305819418328ed055e6608d, type: 3}
+    imgNV: {fileID: 21300000, guid: 62b83d5aa36e6574da31e65802ea68ce, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 4
+    TextStory: "Kh\xF4ng m\u1ED9t tr\u01B0\u1EDDng \u0111\u1EA1i h\u1ECDc n\xE0o
+      \u1EDF Victoria l\xFAc \u0111\xF3 s\u1EB5n s\xE0ng cho ph\xE9p m\u1ED9t ng\u01B0\u1EDDi
+      b\u1ECB nhi\u1EC5m b\u1EC7nh theo h\u1ECDc."
+    NameStory: Mint
+    clip: {fileID: 8300000, guid: e563141ee151865408660f12eed3eea1, type: 3}
+    imgNV: {fileID: 21300000, guid: cedebc57ee3d336419214ac68c070a54, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 0
+    TextStory: "T\u01B0\u1EDFng \u0111\xF3 l\xE0 k\u1EBFt th\xFAc c\u1EE7a m\u1ECDi
+      th\u1EE9 r\u1ED3i."
+    NameStory: Mint
+    clip: {fileID: 8300000, guid: e563141ee151865408660f12eed3eea1, type: 3}
+    imgNV: {fileID: 21300000, guid: cedebc57ee3d336419214ac68c070a54, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 0
+    TextStory: "N\u1EBFu kh\xF4ng c\xF3 th\u01B0 gi\u1EDBi thi\u1EC7u c\u1EE7a ch\u1ECB
+      Skyfire th\xEC ch\u1EAFc m\xECnh-"
+    NameStory: Mint
+    clip: {fileID: 8300000, guid: e563141ee151865408660f12eed3eea1, type: 3}
+    imgNV: {fileID: 21300000, guid: cedebc57ee3d336419214ac68c070a54, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 4
+    TextStory: "M\xE0 l\xFAc n\xE0y kh\xF4ng ph\u1EA3i l\xFAc bu\u1ED3n v\u1EC1 chuy\u1EC7n
+      c\u0169"
+    NameStory: Mint
+    clip: {fileID: 8300000, guid: e563141ee151865408660f12eed3eea1, type: 3}
+    imgNV: {fileID: 21300000, guid: 31b84be76bd422440b67faac1eff4f73, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 1
+    TextStory: "Ti\u1EC1n b\u1ED1i \u1EDF \u0111\u1EA1i h\u1ECDc \u0111\xE3 t\u1EC9nh
+      l\u1EA1i r\u1ED3i."
+    NameStory: Mint
+    clip: {fileID: 8300000, guid: 512f183c7ee1f2f4989ef85ced5e888b, type: 3}
+    imgNV: {fileID: 21300000, guid: 31b84be76bd422440b67faac1eff4f73, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 0
+    TextStory: "Gi\xE1o s\u01B0 c\u0169ng b\u1EA3o khi n\xE0o c\xF3 th\u1EDDi gian
+      m\xECnh n\xEAn v\u1EC1 tr\u01B0\u1EDDng th\u1EF1c hi\u1EC7n l\u1EA1i \u0111\u1ED3
+      \xE1n th\xEAm l\u1EA7n n\u1EEFa."
+    NameStory: Mint
+    clip: {fileID: 8300000, guid: 512f183c7ee1f2f4989ef85ced5e888b, type: 3}
+    imgNV: {fileID: 21300000, guid: 31b84be76bd422440b67faac1eff4f73, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 0
+    TextStory: "Kh\xF4ng c\xF3 g\xEC m\xE0 ph\u1EA3i bu\u1ED3n c\u1EA3."
+    NameStory: Mint
+    clip: {fileID: 8300000, guid: 512f183c7ee1f2f4989ef85ced5e888b, type: 3}
+    imgNV: {fileID: 21300000, guid: 31b84be76bd422440b67faac1eff4f73, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 1
+    TextStory: 
+    NameStory: Mint
+    clip: {fileID: 8300000, guid: e563141ee151865408660f12eed3eea1, type: 3}
+    imgNV: {fileID: 21300000, guid: 31b84be76bd422440b67faac1eff4f73, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 4
+    TextStory: "Ph\xF2ng y t\u1EBF \u1EDF \u0111\xE2y nh\u1EC9?"
+    NameStory: Mint
+    clip: {fileID: 8300000, guid: e563141ee151865408660f12eed3eea1, type: 3}
+    imgNV: {fileID: 21300000, guid: 4af088514ffa4aa4ab20338e46c13228, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 0
+    TextStory: "N\xE3y \u0111\u1EBFn gi\u1EDD m\xECnh ch\u01B0a ch\u1EA1m m\u1EB7t
+      b\u1EA5t k\xEC ai."
+    NameStory: Mint
+    clip: {fileID: 8300000, guid: e563141ee151865408660f12eed3eea1, type: 3}
+    imgNV: {fileID: 21300000, guid: 31b84be76bd422440b67faac1eff4f73, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 4
+    TextStory: "T\u1EA7m n\xE0y d\xF9 mu\u1ED9n r\u1ED3i nh\u01B0ng chuy\u1EC7n kh\xF4ng
+      ai \u0111\u1EBFn ph\xF2ng l\u1EA5y thu\u1ED1c th\xEC qu\u1EA3 l\xE0 m\u1ED9t
+      vi\u1EC7c hi\u1EBFm c\xF3."
+    NameStory: Mint
+    clip: {fileID: 8300000, guid: e563141ee151865408660f12eed3eea1, type: 3}
+    imgNV: {fileID: 21300000, guid: cedebc57ee3d336419214ac68c070a54, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 0
+    TextStory: "Kh\xF4ng bi\u1EBFt n\xEAn b\u1EA3o \u0111\xE2y l\xE0 tin vui hay
+      bu\u1ED3n."
+    NameStory: Mint
+    clip: {fileID: 8300000, guid: e563141ee151865408660f12eed3eea1, type: 3}
+    imgNV: {fileID: 21300000, guid: 31b84be76bd422440b67faac1eff4f73, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 1
+    TextStory: 
+    NameStory: Mint
+    clip: {fileID: 8300000, guid: e563141ee151865408660f12eed3eea1, type: 3}
+    imgNV: {fileID: 21300000, guid: 4af088514ffa4aa4ab20338e46c13228, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 6
+    TextStory: "C\xF4 g\xE1i m\xE8o d\u1EEBng ch\xE2n \u1EDF tr\u01B0\u1EDBc m\u1ED9t
+      c\u0103n ph\xF2ng kh\xE1 l\u1EDBn s\u1EF1 y\xEAn t\u0129nh \u1EDF c\u0103n
+      ph\xF2ng n\xE0y khi\u1EBFn c\xF4 c\u1EA3m th\u1EA5y b\u1EA5t an."
+    NameStory: Mint
+    clip: {fileID: 8300000, guid: e563141ee151865408660f12eed3eea1, type: 3}
+    imgNV: {fileID: 21300000, guid: 31b84be76bd422440b67faac1eff4f73, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 0
+    TextStory: "Kh\xF4ng ph\u1EA3i v\xEC c\xF4 kh\xF4ng bi\u1EBFt ph\xF2ng y t\u1EBF
+      l\xE0 n\u01A1i h\u1EA1n ch\u1EBF s\u1EF1 \u1ED3n \xE0o \u0111\u1EC3 tr\xE1nh
+      l\xE0m \u1EA3nh h\u01B0\u1EDFng \u0111\u1EBFn b\u1EC7nh nh\xE2n \u0111ang \u0111i\u1EC1u
+      tr\u1ECB."
+    NameStory: Mint
+    clip: {fileID: 8300000, guid: e563141ee151865408660f12eed3eea1, type: 3}
+    imgNV: {fileID: 21300000, guid: 62b83d5aa36e6574da31e65802ea68ce, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 0
+    TextStory: "M\xE0 l\xE0 c\xF4 kh\xF4ng h\u1EC1 nghe th\u1EA5y b\u1EA5t k\xEC 
+      \xE2m thanh g\xEC kh\xE1c c\u1EA3."
+    NameStory: Mint
+    clip: {fileID: 8300000, guid: e563141ee151865408660f12eed3eea1, type: 3}
+    imgNV: {fileID: 21300000, guid: 31b84be76bd422440b67faac1eff4f73, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 6
+    TextStory: "Kh\xF4ng ph\u1EA3i n\xF3i qu\xE1 khi c\xF4 t\u1EF1 nh\u1EADn l\xE0
+      ng\u01B0\u1EDDi c\xF3 th\xEDnh gi\xE1c kh\xE1 nh\u1EA1y b\xE9n."
+    NameStory: Mint
+    clip: {fileID: 8300000, guid: e563141ee151865408660f12eed3eea1, type: 3}
+    imgNV: {fileID: 21300000, guid: 31b84be76bd422440b67faac1eff4f73, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 0
+    TextStory: "D\xF9 r\u1EB1ng Skyfire hay n\xF3i c\xF4 ch\u1EC9 bi\u1EBFt d\xF9ng 
+      s\u1EF1 nh\u1EA1y b\xE9n \u0111\xF3 cho m\u1EA5y vi\u1EC7c phi\u1EC1n ph\u1EE9c."
+    NameStory: Mint
+    clip: {fileID: 8300000, guid: e563141ee151865408660f12eed3eea1, type: 3}
+    imgNV: {fileID: 21300000, guid: 62b83d5aa36e6574da31e65802ea68ce, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 1
+    TextStory: 
+    NameStory: Mint
+    clip: {fileID: 8300000, guid: 52fbb8d8c305819418328ed055e6608d, type: 3}
+    imgNV: {fileID: 21300000, guid: 4af088514ffa4aa4ab20338e46c13228, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 3
+    TextStory: 
+    NameStory: Mint
+    clip: {fileID: 8300000, guid: 512f183c7ee1f2f4989ef85ced5e888b, type: 3}
+    imgNV: {fileID: 21300000, guid: 4af088514ffa4aa4ab20338e46c13228, type: 3}
+    Background: {fileID: 21300000, guid: 9a0e48b81be388f43a2989bbc700712d, type: 3}
+    textChoose: []
+  - state: 6
+    TextStory: "C\xF4 m\u1EDF c\u1EEDa b\u01B0\u1EDBc v\xE0o trong c\u0103n ph\xF2ng
+      nh\u01B0ng b\xEAn trong l\u1EA1i tr\u1ED1ng r\u1ED7ng m\u1ED9t c\xE1ch k\xEC
+      l\u1EA1."
+    NameStory: Mint
+    clip: {fileID: 8300000, guid: e563141ee151865408660f12eed3eea1, type: 3}
+    imgNV: {fileID: 21300000, guid: 4af088514ffa4aa4ab20338e46c13228, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 0
+    TextStory: "S\u1EF1 tr\u1ED1ng r\u1ED7ng \u0111\xF3 kh\xF4ng ph\u1EA3i l\xE0
+      v\u1EC1 \u0111\u1ED3 v\u1EADt m\xE0 l\xE0 con ng\u01B0\u1EDDi."
+    NameStory: Mint
+    clip: {fileID: 8300000, guid: e563141ee151865408660f12eed3eea1, type: 3}
+    imgNV: {fileID: 21300000, guid: 4af088514ffa4aa4ab20338e46c13228, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 0
+    TextStory: "Thi\u1EBFt b\u1ECB ki\u1EC3m tra sinh h\u1ECDc v\u1EABn ti\u1EBFp
+      t\u1EE5c ph\xE1t ra \xE2m thanh p\xEDp p\xEDp, m\u1ECDi th\u1EE9 t\u1EEB thu\u1ED1c
+      men \u0111\u1EBFn v\u1EADt ch\u1EA5t \u0111\u1EC1u \u0111\u1EA7y \u0111\u1EE7
+      nh\u01B0ng l\u1EA1i ch\u1EB3ng c\xF3 ai c\u1EA3."
+    NameStory: Mint
+    clip: {fileID: 8300000, guid: e563141ee151865408660f12eed3eea1, type: 3}
+    imgNV: {fileID: 21300000, guid: 4af088514ffa4aa4ab20338e46c13228, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 4
+    TextStory: "Kh\xF4ng c\xF3 ai \u1EDF \u0111\xE2y?"
+    NameStory: Mint
+    clip: {fileID: 8300000, guid: 52fbb8d8c305819418328ed055e6608d, type: 3}
+    imgNV: {fileID: 21300000, guid: 830bb0bfec1cfca4689c790e1eb06bc2, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 0
+    TextStory: "Ngay c\u1EA3 b\u1EC7nh nh\xE2n c\u0169ng th\u1EBF ?"
+    NameStory: Mint
+    clip: {fileID: 8300000, guid: 52fbb8d8c305819418328ed055e6608d, type: 3}
+    imgNV: {fileID: 21300000, guid: 4af088514ffa4aa4ab20338e46c13228, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 6
+    TextStory: "Li\u1EC7u h\xF4m nay kh\xF4ng c\xF3 ai b\u1ECB b\u1EC7nh kh\xF4ng
+      ?"
+    NameStory: Mint
+    clip: {fileID: 8300000, guid: 52fbb8d8c305819418328ed055e6608d, type: 3}
+    imgNV: {fileID: 21300000, guid: 4af088514ffa4aa4ab20338e46c13228, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 0
+    TextStory: "Kh\xF4ng \u0111\xFAng hai ng\xE0y tr\u01B0\u1EDBc \u1EDF \u0111\xE2y
+      v\u1EABn \u0111\u1EA7y \xE1p ng\u01B0\u1EDDi b\u1ECB th\u01B0\u01A1ng v\xE0
+      ng\u01B0\u1EDDi b\u1ECB b\u1EC7nh m\xE0."
+    NameStory: Mint
+    clip: {fileID: 8300000, guid: 52fbb8d8c305819418328ed055e6608d, type: 3}
+    imgNV: {fileID: 21300000, guid: 4af088514ffa4aa4ab20338e46c13228, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 4
+    TextStory: "\u0110i\u1EC1u n\xE0y th\u1EADt k\xEC l\u1EA1, li\u1EC7u r\u1EB1ng
+      m\u1ECDi ng\u01B0\u1EDDi \u0111\xE3 s\u01A1 t\xE1n v\xEC \u0111i\u1EC1u g\xEC
+      \u0111\xF3 ch\u0103ng ?"
+    NameStory: Mint
+    clip: {fileID: 8300000, guid: 52fbb8d8c305819418328ed055e6608d, type: 3}
+    imgNV: {fileID: 21300000, guid: 62b83d5aa36e6574da31e65802ea68ce, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 0
+    TextStory: "Nh\u01B0ng n\u1EBFu v\u1EADy th\xEC thu\u1ED1c v\xE0 nh\u1EEFng thi\u1EBFt
+      b\u1ECB kh\xE1c ph\u1EA3i \u0111\u01B0\u1EE3c thu d\u1ECDn \u0111i ch\u1EE9
+      ?"
+    NameStory: Mint
+    clip: {fileID: 8300000, guid: 52fbb8d8c305819418328ed055e6608d, type: 3}
+    imgNV: {fileID: 21300000, guid: 4af088514ffa4aa4ab20338e46c13228, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 0
+    TextStory: "\u0110\u1EB1ng n\xE0y m\u1ECDi th\u1EE9 c\u1EE9 nh\u01B0 ch\u01B0a
+      bao gi\u1EDD \u0111\u01B0\u1EE3c d\xF9ng v\u1EADy."
+    NameStory: Mint
+    clip: {fileID: 8300000, guid: 52fbb8d8c305819418328ed055e6608d, type: 3}
+    imgNV: {fileID: 21300000, guid: 4af088514ffa4aa4ab20338e46c13228, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 1
+    TextStory: 
+    NameStory: Mint
+    clip: {fileID: 8300000, guid: 512f183c7ee1f2f4989ef85ced5e888b, type: 3}
+    imgNV: {fileID: 21300000, guid: cedebc57ee3d336419214ac68c070a54, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 4
+    TextStory: "Li\u1EC7u r\u1EB1ng m\xECnh \u0111\xE3 th\u1EADt s\u1EF1 tr\u1EDF
+      v\u1EC1 ch\u01B0a ?"
+    NameStory: Mint
+    clip: {fileID: 8300000, guid: 52fbb8d8c305819418328ed055e6608d, type: 3}
+    imgNV: {fileID: 21300000, guid: cedebc57ee3d336419214ac68c070a54, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 0
+    TextStory: "Hay \u0111\xE2y ch\u1EC9 l\xE0 b\xEAn trong c\xE1i g\u01B0\u01A1ng
+      \u0111\xF3 th\xF4i ?"
+    NameStory: Mint
+    clip: {fileID: 8300000, guid: 52fbb8d8c305819418328ed055e6608d, type: 3}
+    imgNV: {fileID: 21300000, guid: cedebc57ee3d336419214ac68c070a54, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 0
+    TextStory: "M\xECnh c\u1EA7n ph\u1EA3i \u0111i xung quanh xem."
+    NameStory: Mint
+    clip: {fileID: 8300000, guid: 52fbb8d8c305819418328ed055e6608d, type: 3}
+    imgNV: {fileID: 21300000, guid: cedebc57ee3d336419214ac68c070a54, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 5
+    TextStory: 
+    NameStory: Mint
+    clip: {fileID: 8300000, guid: 52fbb8d8c305819418328ed055e6608d, type: 3}
+    imgNV: {fileID: 21300000, guid: 62b83d5aa36e6574da31e65802ea68ce, type: 3}
+    Background: {fileID: 0}
+    textChoose:
+    - choose: 0
+      textCho: "\u0110i xung quanh rhodes island"

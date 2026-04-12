@@ -17,7 +17,13 @@ public class ChooseO : MonoBehaviour
     public void getChoose()
     {
         gamemana.gamemna.choose = chooseE;
-        gamemana.gamemna.storyTime();
         gamemana.gamemna.chapter++;
+        gamemana.gamemna.ItCanClick= true;
+        
+        gamemana.gamemna.storyTime();
+        foreach(Transform e in gamemana.gamemna.UIchoose.transform)
+        { 
+        Destroy(e.gameObject);
+        }    
     }
 }

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8088874384538978464}
   - component: {fileID: 240672866514098106}
   - component: {fileID: -8563064433603953199}
+  - component: {fileID: 2594863333669302574}
   m_Layer: 5
   m_Name: UIChoose
   m_TagString: Untagged
@@ -135,7 +136,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8088874384538978464}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 240672866514098106}
+        m_TargetAssemblyTypeName: ChooseO, Assembly-CSharp
+        m_MethodName: getChoose
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!225 &2594863333669302574
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1726303295953567159}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &8643140134551901166
 GameObject:
   m_ObjectHideFlags: 0
@@ -203,8 +228,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: dafc2a0cad1dce145ba834375be0b4b7, type: 2}
+  m_sharedMaterial: {fileID: -959482239162240919, guid: dafc2a0cad1dce145ba834375be0b4b7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

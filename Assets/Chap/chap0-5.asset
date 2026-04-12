@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfb48ebb10237fd48ad583fe1267e1e2, type: 3}
+  m_Name: chap0-5
+  m_EditorClassIdentifier: 
+  StoryChap: 6
+  chooseE: 0
+  Diabl:
+  - state: 4
+    TextStory: "Ch\u1EAFc \u0111\xE2y l\xE0 t\xE1c h\u1EA1i c\u1EE7a vi\u1EC7c ng\u1EE7
+      d\u01B0\u1EDBi s\xE0n th\u01B0 vi\u1EC7n m\xE0 l\xFAc tr\u01B0\u1EDBc HoneyBerry
+      n\xF3i."
+    NameStory: Mint
+    clip: {fileID: 0}
+    imgNV: {fileID: 21300000, guid: 62b83d5aa36e6574da31e65802ea68ce, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 0
+    TextStory: "M\xECnh ph\u1EA3i s\u1EEDa g\u1EA5p c\xE1i t\u1EADt x\u1EA5u \u0111\xF3
+      n\u1EBFu kh\xF4ng th\xEC vi\u1EC7c n\xE0y s\u1EBD l\u1EB7p l\u1EA1i th\xEAm
+      l\u1EA7n n\u1EEFa."
+    NameStory: Mint
+    clip: {fileID: 0}
+    imgNV: {fileID: 21300000, guid: 62b83d5aa36e6574da31e65802ea68ce, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 0
+    TextStory: "K\u1EC3 ra doctor c\u0169ng hay ng\u1EE7 nh\u01B0 v\u1EADy \u1EDF
+      trong ph\xF2ng l\xE0m vi\u1EC7c, m\xECnh ngh\u0129 s\u1EBD nh\u1EAFc anh \u1EA5y
+      v\xE0o l\u1EA7n t\u1EDBi."
+    NameStory: Mint
+    clip: {fileID: 0}
+    imgNV: {fileID: 21300000, guid: 62b83d5aa36e6574da31e65802ea68ce, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 0
+    TextStory: "Nh\u01B0ng ai l\xE0 ng\u01B0\u1EDDi \u0111\u01B0a m\xECnh v\u1EC1
+      ph\xF2ng nh\u1EC9 ?"
+    NameStory: Mint
+    clip: {fileID: 0}
+    imgNV: {fileID: 21300000, guid: 62b83d5aa36e6574da31e65802ea68ce, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 0
+    TextStory: "Th\u01B0\u1EDDng l\xFAc \u0111\xF3 c\xF3 ai ra v\xE0o th\u01B0 vi\u1EC7n
+      \u0111\xE2u ?"
+    NameStory: Mint
+    clip: {fileID: 0}
+    imgNV: {fileID: 21300000, guid: 62b83d5aa36e6574da31e65802ea68ce, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 0
+    TextStory: "D\xF9 ai \u0111i n\u1EEFa m\xECnh c\u0169ng n\xEAn c\u1EA3m \u01A1n
+      ng\u01B0\u1EDDi \u0111\xF3."
+    NameStory: Mint
+    clip: {fileID: 0}
+    imgNV: {fileID: 21300000, guid: 62b83d5aa36e6574da31e65802ea68ce, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 5
+    TextStory: 
+    NameStory: Mint
+    clip: {fileID: 0}
+    imgNV: {fileID: 21300000, guid: 62b83d5aa36e6574da31e65802ea68ce, type: 3}
+    Background: {fileID: 0}
+    textChoose:
+    - choose: 0
+      textCho: "B\u01B0\u1EDBc ra ngo\xE0i h\xE0nh lang"

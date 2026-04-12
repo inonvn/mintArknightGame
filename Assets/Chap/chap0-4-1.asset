@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bfb48ebb10237fd48ad583fe1267e1e2, type: 3}
+  m_Name: chap0-4-1
+  m_EditorClassIdentifier: 
+  StoryChap: 5
+  chooseE: 1
+  Diabl:
+  - state: 4
+    TextStory: "C\xE1i b\xECnh s\u1EE9 n\xE0y l\xE0 c\u1EE7a ch\u1ECB Iris t\u1EB7ng
+      m\xECnh h\u1ED3i tr\u01B0\u1EDBc, ch\u1EAFc m\xECnh ph\u1EA3i \u0111i xin l\u1ED7i
+      ch\u1ECB \u1EA5y m\u1EDBi \u0111\u01B0\u1EE3c."
+    NameStory: Mint
+    clip: {fileID: 0}
+    imgNV: {fileID: 21300000, guid: 62b83d5aa36e6574da31e65802ea68ce, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 0
+    TextStory: "Tr\u01B0\u1EDBc h\u1EBFt m\xECnh c\u1EA7n ph\u1EA3i d\u1ECDn nh\u1EEFng
+      m\u1EA3nh s\u1EE9 tr\u01B0\u1EDBc \u0111\xE3."
+    NameStory: Mint
+    clip: {fileID: 0}
+    imgNV: {fileID: 21300000, guid: 62b83d5aa36e6574da31e65802ea68ce, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 4
+    TextStory: "\u0110\u1EC3 nh\u1EDB coi m\u1EA5y c\xE1i thi\u1EBFt b\u1ECB d\u1ECDn
+      d\u1EB9p \u0111\xE2u r\u1ED3i ?"
+    NameStory: Mint
+    clip: {fileID: 0}
+    imgNV: {fileID: 21300000, guid: cedebc57ee3d336419214ac68c070a54, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 1
+    TextStory: 
+    NameStory: Mint
+    clip: {fileID: 8300000, guid: 512f183c7ee1f2f4989ef85ced5e888b, type: 3}
+    imgNV: {fileID: 21300000, guid: cedebc57ee3d336419214ac68c070a54, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 1
+    TextStory: 
+    NameStory: Mint
+    clip: {fileID: 8300000, guid: 512f183c7ee1f2f4989ef85ced5e888b, type: 3}
+    imgNV: {fileID: 21300000, guid: cedebc57ee3d336419214ac68c070a54, type: 3}
+    Background: {fileID: 0}
+    textChoose: []
+  - state: 5
+    TextStory: 
+    NameStory: Mint
+    clip: {fileID: 8300000, guid: 512f183c7ee1f2f4989ef85ced5e888b, type: 3}
+    imgNV: {fileID: 21300000, guid: cedebc57ee3d336419214ac68c070a54, type: 3}
+    Background: {fileID: 0}
+    textChoose:
+    - choose: 0
+      textCho: "Suy ngh\u0129 v\u1EC1 gi\u1EA5c m\u01A1"
