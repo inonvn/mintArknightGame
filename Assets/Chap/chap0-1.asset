@@ -20,6 +20,8 @@ MonoBehaviour:
       c\xF9ng v\u1EDBi s\u1EF1 t\u0129nh l\u1EB7ng \u0111\u1EBFn k\xEC d\u1ECB"
     NameStory: 
     clip: {fileID: 0}
+    soundType: 1
+    backGroundMusic: {fileID: 8300000, guid: dc0ddcd67732c9e4ea147bfc613258f3, type: 3}
     imgNV: {fileID: 0}
     Background: {fileID: 0}
     textChoose: []
@@ -29,6 +31,8 @@ MonoBehaviour:
       kh\u1EAFp th\u1EBF gian."
     NameStory: 
     clip: {fileID: 0}
+    soundType: 0
+    backGroundMusic: {fileID: 0}
     imgNV: {fileID: 0}
     Background: {fileID: 0}
     textChoose: []
@@ -38,6 +42,8 @@ MonoBehaviour:
       cu\u1ED9n tr\xF2n c\u01A1 th\u1EC3 nh\u1ECF nh\u1EAFn c\u1EE7a m\xECnh l\u1EA1i."
     NameStory: mint
     clip: {fileID: 0}
+    soundType: 0
+    backGroundMusic: {fileID: 0}
     imgNV: {fileID: 0}
     Background: {fileID: 0}
     textChoose: []
@@ -46,6 +52,8 @@ MonoBehaviour:
       n\xE0y. D\xF9 v\u1EADy c\xF4 c\u0169ng kh\xF4ng m\u1EA5y b\u1EADn t\xE2m"
     NameStory: 
     clip: {fileID: 0}
+    soundType: 0
+    backGroundMusic: {fileID: 0}
     imgNV: {fileID: 0}
     Background: {fileID: 0}
     textChoose: []
@@ -54,6 +62,8 @@ MonoBehaviour:
       ng\u1EE7 tr\xEAn s\xE0n th\u01B0 vi\u1EC7n c\u1EE7a rhodes island."
     NameStory: 
     clip: {fileID: 0}
+    soundType: 0
+    backGroundMusic: {fileID: 0}
     imgNV: {fileID: 0}
     Background: {fileID: 0}
     textChoose: []
@@ -63,6 +73,8 @@ MonoBehaviour:
       th\u01B0 vi\u1EC7n n\u1EEFa."
     NameStory: 
     clip: {fileID: 0}
+    soundType: 0
+    backGroundMusic: {fileID: 0}
     imgNV: {fileID: 0}
     Background: {fileID: 0}
     textChoose: []
@@ -71,6 +83,8 @@ MonoBehaviour:
       nheo m\u1EAFt l\u1EA1i v\xEC ch\u01B0a quen v\u1EDBi \xE1nh s\xE1ng."
     NameStory: 
     clip: {fileID: 0}
+    soundType: 0
+    backGroundMusic: {fileID: 0}
     imgNV: {fileID: 0}
     Background: {fileID: 0}
     textChoose: []
@@ -80,6 +94,8 @@ MonoBehaviour:
     NameStory: "d\xF9 v\u1EADy nh\u01B0ng c\xF4 v\u1EABn c\u1ED1 ng\u1ED3i d\u1EADy
       v\xE0 nh\xECn xung quanh"
     clip: {fileID: 0}
+    soundType: 0
+    backGroundMusic: {fileID: 0}
     imgNV: {fileID: 0}
     Background: {fileID: 0}
     textChoose: []
@@ -89,6 +105,8 @@ MonoBehaviour:
       c\xF3 th\u1EC3 hi\u1EC3u \u0111\u01B0\u1EE3c m\u1ED9t \u0111i\u1EC1u."
     NameStory: 
     clip: {fileID: 0}
+    soundType: 0
+    backGroundMusic: {fileID: 0}
     imgNV: {fileID: 0}
     Background: {fileID: 0}
     textChoose: []
@@ -96,6 +114,8 @@ MonoBehaviour:
     TextStory: "\u0110\xE2y l\xE0 \u0111\xE2u ?"
     NameStory: Mint
     clip: {fileID: 0}
+    soundType: 0
+    backGroundMusic: {fileID: 8300000, guid: dc0ddcd67732c9e4ea147bfc613258f3, type: 3}
     imgNV: {fileID: 21300000, guid: 62b83d5aa36e6574da31e65802ea68ce, type: 3}
     Background: {fileID: 0}
     textChoose: []
@@ -103,6 +123,8 @@ MonoBehaviour:
     TextStory: "M\xECnh l\xE0m g\xEC \u1EDF \u0111\xE2y v\u1EADy ?"
     NameStory: 
     clip: {fileID: 0}
+    soundType: 0
+    backGroundMusic: {fileID: 0}
     imgNV: {fileID: 0}
     Background: {fileID: 0}
     textChoose: []
@@ -111,6 +133,8 @@ MonoBehaviour:
       ph\xF2ng nghi\xEAn c\u1EE9u v\u1EADy."
     NameStory: 
     clip: {fileID: 0}
+    soundType: 0
+    backGroundMusic: {fileID: 0}
     imgNV: {fileID: 0}
     Background: {fileID: 0}
     textChoose: []
@@ -119,6 +143,8 @@ MonoBehaviour:
       \u1EDF rhodes island hay th\u1EADm ch\xED l\xE0 c\u1EA3 \u1EDF Victoria."
     NameStory: 
     clip: {fileID: 0}
+    soundType: 0
+    backGroundMusic: {fileID: 0}
     imgNV: {fileID: 0}
     Background: {fileID: 0}
     textChoose: []
@@ -128,6 +154,8 @@ MonoBehaviour:
       li\u1EC7u n\xE0o nh\u1EC9 ?"
     NameStory: 
     clip: {fileID: 0}
+    soundType: 0
+    backGroundMusic: {fileID: 0}
     imgNV: {fileID: 0}
     Background: {fileID: 0}
     textChoose: []
@@ -135,17 +163,32 @@ MonoBehaviour:
     TextStory: "C\xF4 g\xE1i m\xE8o g\xF5 nh\u1EB9 xu\u1ED1ng \u0111\u1EC3 ki\u1EC3m
       tra ch\u1EA5t li\u1EC7u k\xEC l\u1EA1 c\u1EE7a m\u1EB7t s\xE0n."
     NameStory: Mint
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: 512f183c7ee1f2f4989ef85ced5e888b, type: 3}
+    soundType: 0
+    backGroundMusic: {fileID: 0}
     imgNV: {fileID: 21300000, guid: 62b83d5aa36e6574da31e65802ea68ce, type: 3}
     Background: {fileID: 0}
     textChoose:
     - choose: 1
+      textCho: "Kh\xE1m ph\xE1 xung quanh"
+  - state: 1
+    TextStory: 
+    NameStory: Mint
+    clip: {fileID: 8300000, guid: 512f183c7ee1f2f4989ef85ced5e888b, type: 3}
+    soundType: 2
+    backGroundMusic: {fileID: 0}
+    imgNV: {fileID: 21300000, guid: 62b83d5aa36e6574da31e65802ea68ce, type: 3}
+    Background: {fileID: 0}
+    textChoose:
+    - choose: 0
       textCho: "Kh\xE1m ph\xE1 xung quanh"
   - state: 6
     TextStory: "C\xF3 v\u1EBB n\xF3 kh\xF4ng gi\u1ED1ng v\u1EDBi k\xEDnh hay b\u1EA5t
       k\xEC th\u1EE9 g\xEC c\xF4 bi\u1EBFt."
     NameStory: Mint
     clip: {fileID: 0}
+    soundType: 0
+    backGroundMusic: {fileID: 0}
     imgNV: {fileID: 21300000, guid: 62b83d5aa36e6574da31e65802ea68ce, type: 3}
     Background: {fileID: 0}
     textChoose:
@@ -156,6 +199,8 @@ MonoBehaviour:
       c\u1EE9u th\xEC bi\u1EBFt \u0111\xE2u ?"
     NameStory: Mint
     clip: {fileID: 0}
+    soundType: 0
+    backGroundMusic: {fileID: 0}
     imgNV: {fileID: 21300000, guid: 62b83d5aa36e6574da31e65802ea68ce, type: 3}
     Background: {fileID: 0}
     textChoose: []
@@ -164,6 +209,8 @@ MonoBehaviour:
       t\xE1i ph\xE1t r\u1ED3i."
     NameStory: Mint
     clip: {fileID: 0}
+    soundType: 0
+    backGroundMusic: {fileID: 0}
     imgNV: {fileID: 21300000, guid: 10a74c0559447b24db0f1dc6c82e7a01, type: 3}
     Background: {fileID: 0}
     textChoose: []
@@ -173,6 +220,8 @@ MonoBehaviour:
       t\xE2m v\u1EDBi nh\u1EEFng th\u1EE9 m\u1EDBi l\u1EA1 th\xEC th\u1EADt kh\xF3"
     NameStory: Mint
     clip: {fileID: 0}
+    soundType: 0
+    backGroundMusic: {fileID: 0}
     imgNV: {fileID: 21300000, guid: 10a74c0559447b24db0f1dc6c82e7a01, type: 3}
     Background: {fileID: 0}
     textChoose: []
@@ -180,6 +229,8 @@ MonoBehaviour:
     TextStory: "M\xE0 nh\xECn quanh ch\u1ED7 n\xE0y kh\xF4ng gi\u1ED1ng rhodes island."
     NameStory: Mint
     clip: {fileID: 0}
+    soundType: 0
+    backGroundMusic: {fileID: 0}
     imgNV: {fileID: 21300000, guid: 10a74c0559447b24db0f1dc6c82e7a01, type: 3}
     Background: {fileID: 0}
     textChoose: []
@@ -189,6 +240,8 @@ MonoBehaviour:
       th\xEC-"
     NameStory: Mint
     clip: {fileID: 0}
+    soundType: 0
+    backGroundMusic: {fileID: 0}
     imgNV: {fileID: 21300000, guid: 62b83d5aa36e6574da31e65802ea68ce, type: 3}
     Background: {fileID: 0}
     textChoose:
@@ -199,6 +252,8 @@ MonoBehaviour:
       nh\u1EC9 ?"
     NameStory: Mint
     clip: {fileID: 0}
+    soundType: 0
+    backGroundMusic: {fileID: 0}
     imgNV: {fileID: 21300000, guid: cedebc57ee3d336419214ac68c070a54, type: 3}
     Background: {fileID: 0}
     textChoose: []
@@ -208,6 +263,8 @@ MonoBehaviour:
       nh\xE0 c\u1EE9ng v\u1EADy."
     NameStory: Mint
     clip: {fileID: 0}
+    soundType: 0
+    backGroundMusic: {fileID: 0}
     imgNV: {fileID: 21300000, guid: cedebc57ee3d336419214ac68c070a54, type: 3}
     Background: {fileID: 0}
     textChoose: []
@@ -216,6 +273,8 @@ MonoBehaviour:
       v\u1EC1 c\xE1i \u0111\xE3."
     NameStory: Mint
     clip: {fileID: 0}
+    soundType: 0
+    backGroundMusic: {fileID: 0}
     imgNV: {fileID: 21300000, guid: 62b83d5aa36e6574da31e65802ea68ce, type: 3}
     Background: {fileID: 0}
     textChoose:

@@ -21,15 +21,19 @@ MonoBehaviour:
       n\xF3i."
     NameStory: Mint
     clip: {fileID: 0}
-    imgNV: {fileID: 21300000, guid: 62b83d5aa36e6574da31e65802ea68ce, type: 3}
+    soundType: 1
+    backGroundMusic: {fileID: 8300000, guid: dc0ddcd67732c9e4ea147bfc613258f3, type: 3}
+    imgNV: {fileID: 21300000, guid: cedebc57ee3d336419214ac68c070a54, type: 3}
     Background: {fileID: 0}
     textChoose: []
-  - state: 0
+  - state: 4
     TextStory: "M\xECnh ph\u1EA3i s\u1EEDa g\u1EA5p c\xE1i t\u1EADt x\u1EA5u \u0111\xF3
       n\u1EBFu kh\xF4ng th\xEC vi\u1EC7c n\xE0y s\u1EBD l\u1EB7p l\u1EA1i th\xEAm
       l\u1EA7n n\u1EEFa."
     NameStory: Mint
     clip: {fileID: 0}
+    soundType: 0
+    backGroundMusic: {fileID: 0}
     imgNV: {fileID: 21300000, guid: 62b83d5aa36e6574da31e65802ea68ce, type: 3}
     Background: {fileID: 0}
     textChoose: []
@@ -39,6 +43,8 @@ MonoBehaviour:
       v\xE0o l\u1EA7n t\u1EDBi."
     NameStory: Mint
     clip: {fileID: 0}
+    soundType: 0
+    backGroundMusic: {fileID: 0}
     imgNV: {fileID: 21300000, guid: 62b83d5aa36e6574da31e65802ea68ce, type: 3}
     Background: {fileID: 0}
     textChoose: []
@@ -47,6 +53,8 @@ MonoBehaviour:
       ph\xF2ng nh\u1EC9 ?"
     NameStory: Mint
     clip: {fileID: 0}
+    soundType: 0
+    backGroundMusic: {fileID: 0}
     imgNV: {fileID: 21300000, guid: 62b83d5aa36e6574da31e65802ea68ce, type: 3}
     Background: {fileID: 0}
     textChoose: []
@@ -55,6 +63,8 @@ MonoBehaviour:
       \u0111\xE2u ?"
     NameStory: Mint
     clip: {fileID: 0}
+    soundType: 0
+    backGroundMusic: {fileID: 0}
     imgNV: {fileID: 21300000, guid: 62b83d5aa36e6574da31e65802ea68ce, type: 3}
     Background: {fileID: 0}
     textChoose: []
@@ -63,6 +73,8 @@ MonoBehaviour:
       ng\u01B0\u1EDDi \u0111\xF3."
     NameStory: Mint
     clip: {fileID: 0}
+    soundType: 0
+    backGroundMusic: {fileID: 0}
     imgNV: {fileID: 21300000, guid: 62b83d5aa36e6574da31e65802ea68ce, type: 3}
     Background: {fileID: 0}
     textChoose: []
@@ -70,6 +82,8 @@ MonoBehaviour:
     TextStory: 
     NameStory: Mint
     clip: {fileID: 0}
+    soundType: 0
+    backGroundMusic: {fileID: 0}
     imgNV: {fileID: 21300000, guid: 62b83d5aa36e6574da31e65802ea68ce, type: 3}
     Background: {fileID: 0}
     textChoose:

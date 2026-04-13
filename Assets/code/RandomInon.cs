@@ -5,6 +5,7 @@ using DG.Tweening;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public static class RandomInon
@@ -62,10 +63,18 @@ public static class RandomInon
     }
     public static void FadeOut(this CanvasGroup canvasGroup)
     {
+        canvasGroup.gameObject.SetActive(true);
         canvasGroup.alpha = 0;
         canvasGroup.DOKill();
-        canvasGroup.DOFade(1, 0.5f).OnComplete(() => { canvasGroup.alpha = 1; canvasGroup.gameObject.SetActive(true); });
+        canvasGroup.DOFade(1, 0.5f).OnComplete(() => { canvasGroup.alpha = 1;  });
 
+    }
+    public static void FadeOutAndLoad(this CanvasGroup canvasGroup,int NumScene)
+    {
+        canvasGroup.gameObject.SetActive(true);
+        canvasGroup.alpha = 0;
+        canvasGroup.DOKill();
+        canvasGroup.DOFade(1, 0.5f).OnComplete(() => { canvasGroup.alpha = 1; SceneManager.LoadScene(NumScene); });
     }
     public static void ButtonSound (this AudioSource audioSource, AudioClip audioClip )
     {
@@ -74,6 +83,7 @@ public static class RandomInon
     e.GetComponent<Button>().onClick.AddListener(() => {
             audioSource.PlayOneShot(audioClip);
         });
+      
     }
 
         

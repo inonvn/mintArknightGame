@@ -203,6 +203,13 @@ MonoBehaviour:
     imgNV: {fileID: 21300000, guid: 31b84be76bd422440b67faac1eff4f73, type: 3}
     Background: {fileID: 0}
     textChoose: []
+  - state: 3
+    TextStory: 
+    NameStory: Mint
+    clip: {fileID: 8300000, guid: e563141ee151865408660f12eed3eea1, type: 3}
+    imgNV: {fileID: 21300000, guid: 31b84be76bd422440b67faac1eff4f73, type: 3}
+    Background: {fileID: 21300000, guid: 1cd49a913519b6948b19a44a9a545ce3, type: 3}
+    textChoose: []
   - state: 4
     TextStory: "H\u1EA3?"
     NameStory: Mint
@@ -265,10 +272,10 @@ MonoBehaviour:
     imgNV: {fileID: 21300000, guid: 4af088514ffa4aa4ab20338e46c13228, type: 3}
     Background: {fileID: 0}
     textChoose: []
-  - state: 6
+  - state: 1
     TextStory: "Kh\xF4ng c\xF3 ai \u1EDF \u0111\xE2y c\u1EA3?"
     NameStory: Mint
-    clip: {fileID: 8300000, guid: 52fbb8d8c305819418328ed055e6608d, type: 3}
+    clip: {fileID: 8300000, guid: 512f183c7ee1f2f4989ef85ced5e888b, type: 3}
     imgNV: {fileID: 21300000, guid: 4af088514ffa4aa4ab20338e46c13228, type: 3}
     Background: {fileID: 0}
     textChoose: []

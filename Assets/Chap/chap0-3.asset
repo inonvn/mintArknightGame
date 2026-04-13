@@ -19,6 +19,8 @@ MonoBehaviour:
     TextStory: ah-
     NameStory: 
     clip: {fileID: 0}
+    soundType: 0
+    backGroundMusic: {fileID: 0}
     imgNV: {fileID: 0}
     Background: {fileID: 21300000, guid: 88f5c8ad51e85fc469ba543abeb92939, type: 3}
     textChoose: []
@@ -26,6 +28,8 @@ MonoBehaviour:
     TextStory: ah-
     NameStory: 
     clip: {fileID: 0}
+    soundType: 0
+    backGroundMusic: {fileID: 0}
     imgNV: {fileID: 0}
     Background: {fileID: 21300000, guid: 88f5c8ad51e85fc469ba543abeb92939, type: 3}
     textChoose: []
@@ -34,6 +38,8 @@ MonoBehaviour:
       khi\u1EBFn c\xF4 m\u1EDF m\u1EAFt d\u1EADy"
     NameStory: 
     clip: {fileID: 0}
+    soundType: 0
+    backGroundMusic: {fileID: 0}
     imgNV: {fileID: 0}
     Background: {fileID: 21300000, guid: 88f5c8ad51e85fc469ba543abeb92939, type: 3}
     textChoose: []
@@ -43,13 +49,17 @@ MonoBehaviour:
       chi\u1EBFm l\u1EA5y t\xE2m tr\xED c\xF4."
     NameStory: 
     clip: {fileID: 0}
+    soundType: 0
+    backGroundMusic: {fileID: 0}
     imgNV: {fileID: 0}
     Background: {fileID: 21300000, guid: 88f5c8ad51e85fc469ba543abeb92939, type: 3}
     textChoose: []
-  - state: 4
+  - state: 0
     TextStory: "N\u01B0\u1EDBc-"
     NameStory: Mint
     clip: {fileID: 0}
+    soundType: 0
+    backGroundMusic: {fileID: 8300000, guid: c74030affab19ef49b3d41ee0e5e692b, type: 3}
     imgNV: {fileID: 21300000, guid: d4ca2eb323dfc0541987d95a2e3d9133, type: 3}
     Background: {fileID: 21300000, guid: 88f5c8ad51e85fc469ba543abeb92939, type: 3}
     textChoose: []
@@ -57,6 +67,8 @@ MonoBehaviour:
     TextStory: 
     NameStory: Mint
     clip: {fileID: 0}
+    soundType: 0
+    backGroundMusic: {fileID: 0}
     imgNV: {fileID: 21300000, guid: d4ca2eb323dfc0541987d95a2e3d9133, type: 3}
     Background: {fileID: 21300000, guid: 88f5c8ad51e85fc469ba543abeb92939, type: 3}
     textChoose:

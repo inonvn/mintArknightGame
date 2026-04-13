@@ -18,6 +18,8 @@ public class Dia
     public string TextStory;
     public string NameStory;
     public AudioClip clip;
+    public CheckTypeSound soundType;
+    public AudioClip backGroundMusic;
     public Sprite imgNV;
     public Sprite Background;
     public List<ChooseLim> textChoose;
@@ -30,6 +32,13 @@ public class ChooseLim
     public string textCho;
 }
 
+
+public enum CheckTypeSound
+{
+    none,
+    BackGroundMusic,
+    SFX,
+}
 public enum ChooseE
 {
     none,
@@ -46,5 +55,6 @@ public enum state
     changeNV,
     choose,
     onlySeeText,
+   
     
 }

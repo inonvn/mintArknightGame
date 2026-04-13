@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -18,7 +18,7 @@ public class gamemana : MonoBehaviour
 {
     public static gamemana gamemna;
     public List<Story> stories;
- 
+    public AudioClip PressButton;
     public GameObject Choose;
     public GameObject textBox;
     public TextMeshProUGUI text;
@@ -26,6 +26,7 @@ public class gamemana : MonoBehaviour
     public Image imgNV;
     public Image background;
     public AudioSource source;
+    public AudioSource BackGroundMusic;
     public int chapter;
     public CanvasGroup UIsetting;
 
@@ -41,29 +42,60 @@ public class gamemana : MonoBehaviour
     public bool ItCanClick;
     bool ittyping;
    int dong;
+    int resolution;
   public   ChooseE choose;
 
     public CanvasGroup FadeBlack;
+    public CanvasGroup ToBeComtrinue;
     public void Awake()
     {
+        BackGroundMusic = GameObject.Find("BackGroundMusic").GetComponent<AudioSource>();
         gamemna = this;
+        if (save.readValue() != null)
+        {
+            var e = save.readValue();
+            print(e.volume);
+            dong = e.dong;
+            chapter = e.chapter;
+            choose = e.state;
+            resolution = e.resolution;
+            Music.value = e.volume;
+            
+        }
+        else
+        {
+            dong = 0;
+            chapter = 0;
+            choose = ChooseE.none;
+            resolution = 0;
+        }
+        ChangeRe(resolution);
     }
     public void storyTime ()
     {
-        
-       if (ittyping == false && ItCanClick == true)
+        var e = stories.Max(o => o.StoryChap);
+        print(e);
+        if (chapter <= e)
         {
-            StartCoroutine(texte());
+            if (ittyping == false && ItCanClick == true)
+            {
+                StartCoroutine(texte());
 
-        }    
-       else
-        {
-            SkipLine();
+            }
+            else
+            {
+                SkipLine();
+            }
         }
-      
+        else
+        {
+            showEndTamThoi();
+        }
+
     }
     public void onSetting ()
     {
+        RandomInon.ButtonSound(source, PressButton);
         UIsetting.gameObject.SetActive(true);
         RandomInon.FadeOut(UIsetting);
         LogButton.SetActive(false);
@@ -71,9 +103,20 @@ public class gamemana : MonoBehaviour
       
 
     }    
+    public void ChangeRe (int i)
+    {
+        if (i == 0) Screen.SetResolution(1920, 1080, FullScreenMode.MaximizedWindow);
+       else if (i == 1)
+      
+            Screen.SetResolution(1920, 1080, FullScreenMode.Windowed);
+       
+        else if (i==2) Screen.SetResolution(1280, 720, FullScreenMode.Windowed);
+
+
+    }    
     public void offSsetting ()
     {
-       
+        RandomInon.ButtonSound(source, PressButton);
         RandomInon.FadeIn(UIsetting);
       
         LogButton.SetActive(true);
@@ -81,11 +124,10 @@ public class gamemana : MonoBehaviour
     }
     public void GotoMenu ()
     {
-
-        var e = new SaveChapter(chapter, dong, choose);
-        save.saveValue(e);
-        RandomInon.FadeOut(FadeBlack);
-        SceneManager.LoadScene(0);
+        RandomInon.ButtonSound(source, PressButton);
+        SaveOrDelete();
+        RandomInon.FadeOutAndLoad(FadeBlack,0);
+       
     }    
     int nu = 0;
     public void onLogE()
@@ -98,14 +140,16 @@ public class gamemana : MonoBehaviour
     }
     public void onlogE1()
     {
+        RandomInon.ButtonSound(source, PressButton);
         UILog.gameObject.SetActive(true);
         RandomInon.FadeOut(UILog);
         MapButton.SetActive(false);
         settingButton.SetActive(false);
+        var r = UILog.transform.Find("ShowLogE").GetComponent<Transform>();
         while (nu < dong)
 
         {
-            var e = Instantiate(HistoryLine, UILog.transform);
+            var e = Instantiate(HistoryLine, r);
             var f1 = e.transform.Find("name").GetComponent<TextMeshProUGUI>();
             var f2 = e.transform.Find("Dia").GetComponent<TextMeshProUGUI>();
             if (st.Diabl[nu].state == state.changeNV)
@@ -120,6 +164,7 @@ public class gamemana : MonoBehaviour
 
     public void offLogE()
     {
+        RandomInon.ButtonSound(source, PressButton);
         RandomInon.FadeIn(UILog);
         UILog.gameObject.SetActive(false);
         MapButton.SetActive(true);
@@ -133,66 +178,97 @@ public class gamemana : MonoBehaviour
       
 
     }
-    public void logE ()
+   
+    Story st;
+
+    bool OnNV;
+
+    public void checkSound()
     {
         
+        switch (st.Diabl[dong].soundType)
+        {
+            case CheckTypeSound.none:
+                return;
+                case CheckTypeSound.BackGroundMusic:
+                {
+                    BackGroundMusic.Stop();
+                    BackGroundMusic.PlayOneShot(st.Diabl[dong].backGroundMusic);
+                    break;
+                }
+            case CheckTypeSound.SFX:
+                {
+                    source.PlayOneShot(st.Diabl[dong].clip);
+                    break;
+                }
+        }
     }
-    Story st;
-  
     IEnumerator texte()
     {
 
 
+      
+            st = stories.Where(o => o.StoryChap == chapter && o.chooseE == choose).FirstOrDefault();
+            if (dong < st.Diabl.Count())
+            {
 
-       st  = stories.Where(o => o.StoryChap == chapter && o.chooseE == choose).FirstOrDefault();
-        if (dong < st.Diabl.Count())
-        {
-            
 
-           
+
                 text.SetText("");
                 switch (st.Diabl[dong].state)
                 {
                     case state.None:
                         {
-                           
+                        if (OnNV) imgNV.gameObject.SetActive(true);
+                        else imgNV.gameObject.SetActive(false);
+                        checkSound();
+                      
                             foreach (var e in st.Diabl[dong].TextStory)
                             {
                                 text.text += e;
                                 yield return new WaitForSeconds(0.01f);
-                            //if (ittyping == true)
-                            //{
-                            //    SkipLine();
-                            //    break;
-                            //}
-                            ittyping = true;
+                                //if (ittyping == true)
+                                //{
+                                //    SkipLine();
+                                //    break;
+                                //}
+                                ittyping = true;
+                            }
+                            ittyping = false;
+                            dong++;
                         }
-                        ittyping = false;
-                    dong++;
-                        }
-                    break;
-                        
+                        break;
+             
                     case state.Sound:
                         {
-                                source.PlayOneShot(st.Diabl[dong].clip);
-                            foreach (var e in st.Diabl[dong].TextStory)
+                        OnNV = false;
+                        imgNV.gameObject.SetActive(false);
+                        Name.SetText("");
+                        source.PlayOneShot(st.Diabl[dong].clip);
+                        
+                        foreach (var e in st.Diabl[dong].TextStory)
                             {
                                 text.text += e;
                                 yield return new WaitForSeconds(0.01f);
-                            //if (ittyping == true)
-                            //{
-                            //    SkipLine();
-                            //    break;
-                            //}
-                            ittyping = true;
-                        }
-                                ittyping = false;
-                        dong++;
-                        break;
+                                //if (ittyping == true)
+                                //{
+                                //    SkipLine();
+                                //    break;
+                                //}
+                                ittyping = true;
+                            }
+                            ittyping = false;
+                            dong++;
+                      
+                            break;
                         }
                     case state.stopSound:
                         {
-                            foreach (var e in st.Diabl[dong].TextStory)
+                        if (OnNV) imgNV.gameObject.SetActive(true);
+                        else imgNV.gameObject.SetActive(false);
+                       
+                                BackGroundMusic.Stop();
+                        foreach (var e in st.Diabl[dong].TextStory)
                             {
                                 text.text += e;
                                 yield return new WaitForSeconds(0.01f);
@@ -201,16 +277,18 @@ public class gamemana : MonoBehaviour
                                 //    SkipLine();
                                 //    break;
                                 //}
-                                source.Stop();
-                            ittyping = true;
-                        }
-                                ittyping = false;
-                        dong++;
-                        break;
+                                ittyping = true;
+                            }
+                            ittyping = false;
+                            dong++;
+                            break;
                         }
                     case state.changeBackGround:
                         {
-                            background.sprite = st.Diabl[dong].Background;
+                        imgNV.gameObject.SetActive(false);
+                        Name.SetText("");
+                        checkSound();
+                        background.sprite = st.Diabl[dong].Background;
                             foreach (var e in st.Diabl[dong].TextStory)
                             {
                                 text.text += e;
@@ -220,54 +298,38 @@ public class gamemana : MonoBehaviour
                                 //    SkipLine();
                                 //    break;
                                 //}
-                                source.Stop();
-                            ittyping = true;
-                        }
-                                ittyping = false;
-                        dong++;
-                        break;
+                                BackGroundMusic.Stop();
+                                ittyping = true;
+                            }
+                            ittyping = false;
+                            dong++;
+
+                            break;
                         }
                     case state.changeNV:
                         {
+                        imgNV.gameObject.SetActive(true);
+                        OnNV = true;
+                        checkSound();
                             Name.SetText(st.Diabl[dong].NameStory);
                             imgNV.sprite = st.Diabl[dong].imgNV;
                             foreach (var e in st.Diabl[dong].TextStory)
                             {
                                 text.text += e;
                                 yield return new WaitForSeconds(0.01f);
-                            //if (ittyping == true)
-                            //{
-                            //    SkipLine();
-                            //    break;
-                            //}
-                            ittyping = true;
+                                //if (ittyping == true)
+                                //{
+                                //    SkipLine();
+                                //    break;
+                                //}
+                                ittyping = true;
                             }
-                                ittyping = false;
-                        dong++;
-                        break;
+                            ittyping = false;
+                            dong++;
+                            break;
                         }
                     case state.choose:
                         {
-                        foreach (var e in st.Diabl[dong].TextStory)
-                        {
-                            text.text += e;
-                            yield return new WaitForSeconds(0.01f);
-                            //if (ittyping == true)
-                            //{
-                            //    SkipLine();
-                            //    break;
-                            //}
-                            source.Stop();
-                            ittyping = true;
-                        }
-                        ittyping = false;
-                        SpawnChoose();
-                        break;
-                        }
-                    case state.onlySeeText:
-                        {
-                            Name.SetText("");
-                      imgNV.sprite = null;
                             foreach (var e in st.Diabl[dong].TextStory)
                             {
                                 text.text += e;
@@ -277,23 +339,55 @@ public class gamemana : MonoBehaviour
                                 //    SkipLine();
                                 //    break;
                                 //}
-                                source.Stop();
-                            ittyping = true;
+                                
+                                ittyping = true;
+                            }
+                            ittyping = false;
+                            SpawnChoose();
+                            break;
                         }
-                                ittyping = false;
-                        dong++;
-                        break;
+                    case state.onlySeeText:
+                        {
+
+                            Name.SetText("");
+                        checkSound();
+                        OnNV=false;
+                            imgNV.gameObject.SetActive(false);
+                            foreach (var e in st.Diabl[dong].TextStory)
+                            {
+                                text.text += e;
+                                yield return new WaitForSeconds(0.01f);
+                                //if (ittyping == true)
+                                //{
+                                //    SkipLine();
+                                //    break;
+                                //}
+                                
+                                ittyping = true;
+                            }
+                            ittyping = false;
+                            dong++;
+                            break;
                         }
                 }
 
-            
 
-        }
-        else
-        {
-            endLine();
-        }
+
+            }
+            else
+            {
+                endLine();
+            }
+        
+       
     }
+    public void showEndTamThoi()
+    {
+       
+        RandomInon.FadeOut(ToBeComtrinue);
+
+    }    
+    
     public void SpawnChoose()
     {
         ItCanClick = false;
@@ -327,113 +421,54 @@ public class gamemana : MonoBehaviour
        
         }
    
+   
 public void Start()
     {
+        StartCoroutine(StartAw());
+    }
+    IEnumerator StartAw()
+    {
+        FadeBlack.gameObject.SetActive(true);
         RandomInon.FadeIn(FadeBlack);
-
+        ItCanClick = false;
+        yield return new WaitUntil(()=> FadeBlack.alpha == 0);
         ItCanClick = true;
-        if (save.readValue() != null)
+        BackGroundMusic.Stop();
+
+
+        storyTime();
+    }    
+    public void SaveOrDelete()
+    {
+        var e = stories.Max(o => o.StoryChap);
+        if (chapter <= e)
         {
-            var e = save.readValue();
-            dong = e.dong;
-            chapter = e.chapter;
-            choose = e.state;
+            var e1 = new SaveChapter(chapter, dong, choose,resolution,source.volume);
+            save.saveValue(e1);
         }
         else
         {
-            dong = 0;
-            chapter = 0;
-            choose = ChooseE.none;
+            var path = Path.Combine(Application.persistentDataPath, "valuee.json");
+            if (File.Exists(path) == true)
+            {
+                File.Delete(path);
+            }
         }
-
-        storyTime();
     }
     public void Update()
     {
         source.volume = Music.value;
+        BackGroundMusic.volume = Music.value-0.1f;
     }
     public void OnApplicationQuit()
     {
-        var e = new SaveChapter (chapter,dong,choose);
-        save.saveValue(e);
+        SaveOrDelete();
     }
 
 }
     
-    [CustomEditor(typeof(Story))]
-public class StoryEditor : Editor
-{
-    public override void OnInspectorGUI()
-    {
-        //DrawDefaultInspector();
 
-        base.OnInspectorGUI();
-        Story story = (Story)target;
-        foreach (var e in story.Diabl)
-        {
-            e.state = (state)EditorGUILayout.EnumPopup(e.state);
-            switch (e.state)
-            {
-                case state.None:
-                    {
-                        e.TextStory = EditorGUILayout.TextField("Text :",e.TextStory);
-
-                        break;
-                    }
-                case state.Sound:
-                    {
-                        e.TextStory = EditorGUILayout.TextField("Text :",e.TextStory);
-                        e.clip = (AudioClip)EditorGUILayout.ObjectField(e.clip,typeof(AudioClip),false);
-                        break;
-                    }
-                case state.stopSound:
-                    {
-                        e.TextStory = EditorGUILayout.TextField("Text :", e.TextStory);
-                        break;
-                    }
-                case state.changeBackGround:
-                    {
-                        e.TextStory= EditorGUILayout.TextField("Text :", e.TextStory);
-                        e.Background =(Sprite) EditorGUILayout.ObjectField(e.Background,typeof(Sprite),true);
-                        break;
-                    }
-                case state.changeNV:
-                    {
-                        e.NameStory = EditorGUILayout.TextField("Name :",e.NameStory);
-                        e.TextStory = EditorGUILayout.TextField("Text :", e.TextStory);
-                        e.imgNV = (Sprite)EditorGUILayout.ObjectField(e.imgNV, typeof(Sprite), true);
-                        break;
-                    }
-                case state.choose:
-                    {
-                        e.TextStory = EditorGUILayout.TextField("Text :", e.TextStory);
-                        foreach(var f in e.textChoose)
-                        {
-                            f.choose = (ChooseE)EditorGUILayout.EnumPopup(f.choose);
-                            f.textCho = EditorGUILayout.TextField("Text :", f.textCho);
-                        }    
-                        break;
-                    }
-                case state.onlySeeText:
-                    {
-                        e.TextStory=EditorGUILayout.TextField("Text :", e.TextStory);
-                        
-                        break;
-                    }
-
-
-
-
-
-            }
-            if (GUI.changed)
-            {
-                EditorUtility.SetDirty(story);
-            }    
-
-        }
-    }
-}
+ 
 public static class save
 {
 
@@ -446,15 +481,16 @@ public static class save
     {
         var path = Path.Combine(Application.persistentDataPath, "valuee.json");
       var  PlayerValue = p;
-
+        
 
         string e = JsonUtility.ToJson(PlayerValue);
+       
 
         File.WriteAllText(path, e);
     }
     public static SaveChapter readValue()
     {
-      var  path = Path.Combine(Application.persistentDataPath, "BXH.json");
+      var  path = Path.Combine(Application.persistentDataPath, "valuee.json");
         if (File.Exists(path) == true)
         {
             var str = File.ReadAllText(path);
@@ -469,15 +505,18 @@ public static class save
 }
 public class SaveChapter
 {
-    public int chapter { get; set; }
-    public int dong { get; set; }
-    public ChooseE  state { get; set; }
-
-    public SaveChapter ( int chapter, int dong , ChooseE chooseE)
+    public int chapter;
+    public int dong;
+    public ChooseE state;
+    public int resolution;
+    public float volume;
+    public SaveChapter ( int chapter, int dong , ChooseE chooseE,int resolution,float volume)
     {
         this.chapter = chapter;
         this.dong = dong;
         this.state = chooseE;
+        this.resolution = resolution;
+        this.volume = volume;
     }
 }
 
