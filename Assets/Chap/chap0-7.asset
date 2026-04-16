@@ -207,9 +207,9 @@ MonoBehaviour:
     imgNV: {fileID: 21300000, guid: cedebc57ee3d336419214ac68c070a54, type: 3}
     Background: {fileID: 21300000, guid: f0a86bd8dbde19c4abe1cd262caa309e, type: 3}
     textChoose: []
-  - state: 0
-    TextStory: "T\u1ED1t nh\u1EA5t em n\xEAn mang theo m\u1ED9t c\xE1i \u0111\u1ED3ng
-      h\u1ED3 l\xEAn d\xE2y ri\xEAng."
+  - state: 4
+    TextStory: "\"T\u1ED1t nh\u1EA5t em n\xEAn mang theo m\u1ED9t c\xE1i \u0111\u1ED3ng
+      h\u1ED3 l\xEAn d\xE2y ri\xEAng.\""
     NameStory: "Nh\xE0 nghi\xEAn c\u1EE9u nam"
     clip: {fileID: 8300000, guid: e563141ee151865408660f12eed3eea1, type: 3}
     soundType: 0
@@ -218,8 +218,8 @@ MonoBehaviour:
     Background: {fileID: 21300000, guid: f0a86bd8dbde19c4abe1cd262caa309e, type: 3}
     textChoose: []
   - state: 4
-    TextStory: "Th\xF4i n\xE0o ch\xE0ng trai kh\xF4ng c\u1EA7n ph\u1EA3i m\u1EDDi
-      g\u1ECDi em \u1EA5y mua m\u1EA5y m\xF3n \u0111\u1ED3 c\u1EE7a c\u1EADu \u0111\xE2u."
+    TextStory: "1\"Th\xF4i n\xE0o ch\xE0ng trai kh\xF4ng c\u1EA7n ph\u1EA3i m\u1EDDi
+      g\u1ECDi em \u1EA5y mua m\u1EA5y m\xF3n \u0111\u1ED3 c\u1EE7a c\u1EADu \u0111\xE2u.\""
     NameStory: "Nh\xE0 nghi\xEAn c\u1EE9u n\u1EEF"
     clip: {fileID: 8300000, guid: e563141ee151865408660f12eed3eea1, type: 3}
     soundType: 0
@@ -227,9 +227,9 @@ MonoBehaviour:
     imgNV: {fileID: 0}
     Background: {fileID: 21300000, guid: f0a86bd8dbde19c4abe1cd262caa309e, type: 3}
     textChoose: []
-  - state: 0
-    TextStory: "T\xF4i n\xF3i r\u1ED3i c\xE1i n\xE0y l\xE0 \u0111\u1EC3 t\u1ED1t
-      cho em \u1EA5y th\xF4i."
+  - state: 4
+    TextStory: "\"T\xF4i n\xF3i r\u1ED3i c\xE1i n\xE0y l\xE0 \u0111\u1EC3 t\u1ED1t
+      cho em \u1EA5y th\xF4i.\""
     NameStory: "Nh\xE0 nghi\xEAn c\u1EE9u nam"
     clip: {fileID: 8300000, guid: e563141ee151865408660f12eed3eea1, type: 3}
     soundType: 0
@@ -238,9 +238,9 @@ MonoBehaviour:
     Background: {fileID: 21300000, guid: f0a86bd8dbde19c4abe1cd262caa309e, type: 3}
     textChoose: []
   - state: 4
-    TextStory: "Eleanor (mint) \xE0 em kh\xF4ng c\u1EA7n ph\u1EA3i nghe t\xEAn n\xE0y
-      n\xF3i \u0111\xE2u, th\u1EDDi bu\u1ED5i n\xE0o r\u1ED3i ai l\u1EA1i d\xF9ng
-      m\u1EA5y c\xE1i \u0111\u1ED3ng h\u1ED3 l\xEAn d\xE2y c\xF3t n\u1EEFa."
+    TextStory: "\"Eleanor (mint) \xE0 em kh\xF4ng c\u1EA7n ph\u1EA3i nghe t\xEAn
+      n\xE0y n\xF3i \u0111\xE2u, th\u1EDDi bu\u1ED5i n\xE0o r\u1ED3i ai l\u1EA1i
+      d\xF9ng m\u1EA5y c\xE1i \u0111\u1ED3ng h\u1ED3 l\xEAn d\xE2y c\xF3t n\u1EEFa.\""
     NameStory: "Nh\xE0 nghi\xEAn c\u1EE9u n\u1EEF"
     clip: {fileID: 8300000, guid: e563141ee151865408660f12eed3eea1, type: 3}
     soundType: 0
@@ -248,9 +248,9 @@ MonoBehaviour:
     imgNV: {fileID: 0}
     Background: {fileID: 21300000, guid: f0a86bd8dbde19c4abe1cd262caa309e, type: 3}
     textChoose: []
-  - state: 0
-    TextStory: "N\xE0y t\xF4i \u0111ang \u0111\u01B0a l\u1EDDi khuy\xEAn \u0111\xFAng
-      \u0111\u1EAFng \u0111\xF3 nha!"
+  - state: 4
+    TextStory: "\"N\xE0y t\xF4i \u0111ang \u0111\u01B0a l\u1EDDi khuy\xEAn \u0111\xFAng
+      \u0111\u1EAFng \u0111\xF3 nha!\""
     NameStory: "Nh\xE0 nghi\xEAn c\u1EE9u nam"
     clip: {fileID: 8300000, guid: e563141ee151865408660f12eed3eea1, type: 3}
     soundType: 0
@@ -258,10 +258,10 @@ MonoBehaviour:
     imgNV: {fileID: 0}
     Background: {fileID: 21300000, guid: f0a86bd8dbde19c4abe1cd262caa309e, type: 3}
     textChoose: []
-  - state: 0
-    TextStory: "v\xE2ng, v\xE2ng, m\xECnh kh\xF4ng ph\u1EE7 nh\u1EADn vi\u1EC7c bi\u1EBFt
-      th\u1EDDi gian ch\xEDnh x\xE1c khi b\u1ECB l\u1EA1c nh\u01B0ng m\xE0 ch\xFAng
-      ta c\xF3 th\u1EC3 d\xF9ng \u0111i\u1EC7n tho\u1EA1i m\xE0 ?"
+  - state: 4
+    TextStory: "\"V\xE2ng, v\xE2ng, m\xECnh kh\xF4ng ph\u1EE7 nh\u1EADn vi\u1EC7c
+      bi\u1EBFt th\u1EDDi gian ch\xEDnh x\xE1c khi b\u1ECB l\u1EA1c nh\u01B0ng m\xE0
+      ch\xFAng ta c\xF3 th\u1EC3 d\xF9ng \u0111i\u1EC7n tho\u1EA1i m\xE0 ?\""
     NameStory: "Nh\xE0 nghi\xEAn c\u1EE9u n\u1EEF"
     clip: {fileID: 8300000, guid: e563141ee151865408660f12eed3eea1, type: 3}
     soundType: 0
@@ -320,7 +320,7 @@ MonoBehaviour:
     imgNV: {fileID: 21300000, guid: 62b83d5aa36e6574da31e65802ea68ce, type: 3}
     Background: {fileID: 21300000, guid: f0a86bd8dbde19c4abe1cd262caa309e, type: 3}
     textChoose: []
-  - state: 4
+  - state: 0
     TextStory: "D\xF9 ch\u01B0a t\u1EEBng \u0111\u1ED9ng \u0111\u1EBFn thi\u1EBFt
       b\u1ECB b\xEAn trong nh\u01B0ng m\xECnh \xEDt nh\u1EA5t c\xF3 th\u1EC3 b\u1EADt
       \u0111\u01B0\u1EE3c ch\u1EBF \u0111\u1ED9 c\u1EA7u c\u1EE9u."

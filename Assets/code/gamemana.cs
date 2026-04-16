@@ -312,8 +312,10 @@ public class gamemana : MonoBehaviour
                         OnNV = true;
                         checkSound();
                             Name.SetText(st.Diabl[dong].NameStory);
-                            imgNV.sprite = st.Diabl[dong].imgNV;
-                            foreach (var e in st.Diabl[dong].TextStory)
+                        if (st.Diabl[dong].imgNV!=null) imgNV.sprite = st.Diabl[dong].imgNV;
+                        else { imgNV.gameObject.SetActive(false); }
+
+                        foreach (var e in st.Diabl[dong].TextStory)
                             {
                                 text.text += e;
                                 yield return new WaitForSeconds(0.01f);

@@ -4,6 +4,8 @@ using UnityEngine;
 using DG.Tweening;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
+using TMPro;
 
 public class Menu : MonoBehaviour
 {
@@ -18,11 +20,12 @@ public class Menu : MonoBehaviour
     public CanvasGroup Continue;
     public AudioSource SongVolume;
     public AudioClip SongClip;
+    public TMP_Dropdown drop;
     void Start()
     {
         DontDestroyOnLoad(SongVolume.gameObject);
         SongVolume.PlayOneShot(SongClip);
-        if (save.readValue()!=null)
+        if (save.readValue()!=null || ( save.readValue().chapter==0 && save.readValue().dong==0) )
         RandomInon.FadeOut(Continue);
         else Continue.gameObject.SetActive(false);
         foreach (CanvasGroup group in canvasGroup)
@@ -66,7 +69,8 @@ public class Menu : MonoBehaviour
         {
             savec = save.readValue();
            
-            resolution = savec.resolution;
+            drop.value = savec.resolution;
+            resolution = drop.value;
             Slider.value = savec.volume;
 
         }
@@ -74,16 +78,19 @@ public class Menu : MonoBehaviour
         {
             savec = new SaveChapter(0, 0, ChooseE.none, resolution, AudioSource.volume);
         }
-        ChangeRe(resolution);
+        ChangeRe();
     }
-    public void ChangeRe(int i)
+    public void ChangeRe()
     {
-        if (i == 0) { Screen.SetResolution(1920, 1080, FullScreenMode.MaximizedWindow); resolution = 0; }
-        else if (i == 1)
-        { Screen.SetResolution(1920, 1080, FullScreenMode.Windowed);resolution = 1; }
+       
+      
+            
+            if (drop.value == 0) { Screen.SetResolution(1920, 1080, FullScreenMode.MaximizedWindow); resolution = 0; }
+        else if (drop.value == 1)
+        { Screen.SetResolution(1920, 1080,false);resolution = 1; }
            
 
-        else if (i == 2){ Screen.SetResolution(1280, 720, FullScreenMode.Windowed); resolution = 2; }
+        else if (drop.value == 2){ Screen.SetResolution(1280, 720, false); resolution = 2; }
 
 
     }
